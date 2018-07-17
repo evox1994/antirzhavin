@@ -30,11 +30,33 @@
 	<div class="b header">
 		<div class="b-block">
 			<div class="header-top">
+				<div class="mobile-btn">
+		            <div class="mobile-btn-el"></div>
+		        </div>
 				<a href="index.html" class="header-logo"><img src="i/logo.png"></a>
 				<div class="header-city">
+					<div class="select">
+						<span class="select-city">Томск</span>
+						<span class="select-obl">Томская область</span>
+						<ul>
+							<li class="active" data-opt=".opt-1">
+								<span>Томск</span>
+								<p>Томская область</p>
+							</li>
+							<li data-opt=".opt-2">
+								<span>Северск</span>
+								<p>Томская область</p>
+							</li>
+							<li data-opt=".opt-3">
+								<span>Стрежевой</span>
+								<p>Томская область</p>
+							</li>
+						</ul>
+					</div>
 					<select>
-						<option value="Томск"><span>Томск</span><br>Томская область</option>
-						<option value="Северск"><span>Северск</span><br>Томская область</option>
+						<option class="opt-1" value="Томск">Томск, Томская область</option>
+						<option class="opt-2" value="Северск">Северск, Томская область</option>
+						<option class="opt-3" value="Стрежевой">Стрежевой, Томская область</option>
 					</select>
 				</div>
 				<div class="header-address">
@@ -45,6 +67,30 @@
 					<a href="#" class="header-order fancybox">Заказать звонок</a>
 				</div>
 			</div>
+			<div class="header-nav">
+				<a href="index.html" class="nav-logo"><img src="i/logo.png"></a>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="products.html">Продукция</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="reviews.html">Отзывы и испытания</a></li>
+					<li><a href="otvety.html">Ответы на вопросы</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="media.html">Медиа</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li><a href="diller.html">Стать дилером завода</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile-menu">
+		<div class="b-block">
+			<div class="mobile-btn">
+		        <div class="mobile-btn-el"></div>
+		    </div>
+		    <a href="index.html" class="header-logo"><img src="i/logo.png"></a>
 			<div class="header-nav">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
@@ -122,35 +168,35 @@
 			<h2 class="title">Области применения</h2>
 			<ul class="prim-list">
 				<li>
-					<div class="prim-image"><img src="i/prim-1.png"></div>
+					<div class="prim-image"><a href="#" class="fancybox"><img src="i/prim-1.png"></a></div>
 					<span>ТЭК</span>
 				</li>
 				<li>
-					<div class="prim-image"><img src="i/prim-2.png"></div>
+					<div class="prim-image"><a href="#" class="fancybox"><img src="i/prim-2.png"></a></div>
 					<span>ЖКХ</span>
 				</li>
 				<li>
-					<div class="prim-image"><img src="i/prim-3.png"></div>
+					<div class="prim-image"><a href="#" class="fancybox"><img src="i/prim-3.png"></a></div>
 					<span>Частный сектор</span>
 				</li>
 				<li>
-					<div class="prim-image"><img src="i/prim-4.png"></div>
+					<div class="prim-image"><a href="#" class="fancybox"><img src="i/prim-4.png"></a></div>
 					<span>Автосервисы</span>
 				</li>
 				<li>
-					<div class="prim-image"><img src="i/prim-5.png"></div>
+					<div class="prim-image"><a href="#" class="fancybox"><img src="i/prim-5.png"></a></div>
 					<span>Теплоснабжающие<br> и сервисные компании</span>
 				</li>
 				<li>
-					<div class="prim-image"><img src="i/prim-6.png"></div>
+					<div class="prim-image"><a href="#" class="fancybox"><img src="i/prim-6.png"></a></div>
 					<span>Социально значимые<br> объекты</span>
 				</li>
 				<li>
-					<div class="prim-image"><img src="i/prim-7.png"></div>
+					<div class="prim-image"><a href="#" class="fancybox"><img src="i/prim-7.png"></a></div>
 					<span>Объекты<br> "РЖД"</span>
 				</li>
 				<li>
-					<div class="prim-image"><img src="i/prim-7.png"></div>
+					<div class="prim-image"><a href="#" class="fancybox"><img src="i/prim-7.png"></a></div>
 					<span>Объекты<br> "РЖД"</span>
 				</li>
 			</ul>
@@ -213,22 +259,22 @@
 			<h2 class="title">Сертификаты продукции</h2>
 			<div class="b-6-slider clearfix">
 				<div class="b-6-slide">
-					<img src="i/b-6-slide-img.png">
+					<a href="i/b-6-slide-img.png" class="fancybox" data-fancybox="image" rel="sert"><img src="i/b-6-slide-img.png"></a>
 				</div>
 				<div class="b-6-slide">
-					<img src="i/b-6-slide-img.png">
+					<a href="i/b-6-slide-img.png" class="fancybox" data-fancybox="image" rel="sert"><img src="i/b-6-slide-img.png"></a>
 				</div>
 				<div class="b-6-slide">
-					<img src="i/b-6-slide-img.png">
+					<a href="i/b-6-slide-img.png" class="fancybox" data-fancybox="image" rel="sert"><img src="i/b-6-slide-img.png"></a>
 				</div>
 				<div class="b-6-slide">
-					<img src="i/b-6-slide-img.png">
+					<a href="i/b-6-slide-img.png" class="fancybox" data-fancybox="image" rel="sert"><img src="i/b-6-slide-img.png"></a>
 				</div>
 				<div class="b-6-slide">
-					<img src="i/b-6-slide-img.png">
+					<a href="i/b-6-slide-img.png" class="fancybox" data-fancybox="image" rel="sert"><img src="i/b-6-slide-img.png"></a>
 				</div>
 				<div class="b-6-slide">
-					<img src="i/b-6-slide-img.png">
+					<a href="i/b-6-slide-img.png" class="fancybox" data-fancybox="image" rel="sert"><img src="i/b-6-slide-img.png"></a>
 				</div>
 			</div>
 		</div>
@@ -262,9 +308,28 @@
 			<div class="footer-top">
 				<a href="index.html" class="footer-logo"><img src="i/logo.png"></a>
 				<div class="footer-city">
+					<div class="select">
+						<span class="select-city">Томск</span>
+						<span class="select-obl">Томская область</span>
+						<ul>
+							<li class="active" data-opt=".opt-1">
+								<span>Томск</span>
+								<p>Томская область</p>
+							</li>
+							<li data-opt=".opt-2">
+								<span>Северск</span>
+								<p>Томская область</p>
+							</li>
+							<li data-opt=".opt-3">
+								<span>Стрежевой</span>
+								<p>Томская область</p>
+							</li>
+						</ul>
+					</div>
 					<select>
-						<option value="Томск"><span>Томск</span><br>Томская область</option>
-						<option value="Северск"><span>Северск</span><br>Томская область</option>
+						<option class="opt-1" value="Томск">Томск, Томская область</option>
+						<option class="opt-2" value="Северск">Северск, Томская область</option>
+						<option class="opt-3" value="Стрежевой">Стрежевой, Томская область</option>
 					</select>
 				</div>
 				<div class="footer-address">

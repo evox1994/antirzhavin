@@ -7,6 +7,12 @@ $(document).ready(function(){
 		dots: true,
 		arrows: false,
 		slidesToShow: 3,
+		responsive: [{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+			}
+		}]
 	});
 
 	$('.b-6-slider').slick({
@@ -14,6 +20,12 @@ $(document).ready(function(){
 		dots: true,
 		arrows: false,
 		slidesToShow: 3,
+		responsive: [{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+			}
+		}]
 	});
 
 });

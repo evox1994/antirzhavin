@@ -110,7 +110,7 @@
 	vertical-align: top;
 	width: 24%;
 	box-sizing: border-box;
-	padding: 0 5px;
+	padding: 0 3px;
 }
 .advantage-image {
 	min-height: 115px;
@@ -137,6 +137,7 @@
 	line-height: 1.2;
 	color: #000000;
 	margin-bottom: 15px;
+	font-family: "PFDinDisplayPro-Regular";
 }
 .advantage-list p {
 	display: block;
@@ -164,16 +165,20 @@
 	min-height: 100px;
 	margin-bottom: 20px;
 }
-.prim-image img {
-	display: block;
-	max-width: 100%;
-	margin: 0 auto;
+.prim-image a {
+	display: inline-block;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	transition: all 0.5s;
+	max-width: 100%;
 }
-.prim-list li:hover .prim-image img {
+.prim-image img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.prim-list li:hover .prim-image a {
 	-webkit-transform: translateY(-10px);
 	-moz-transform: translateY(-10px);
 	-ms-transform: translateY(-10px);
@@ -184,6 +189,7 @@
 	font-size: 21px;
 	line-height: 1.2;
 	color: #000000;
+	font-family: "PFDinDisplayPro-Regular";
 }
 
 .b-4 .b-block, .b-5 .b-block {
@@ -197,6 +203,7 @@
 	font-size: 23px;
 	color: rgb(7, 48, 84);
 	text-align: center;
+	font-family: "PFDinDisplayPro-Regular";
 }
 .b-4-span::before {
 	content: '';
@@ -415,6 +422,7 @@
 	font-size: 23px;
 	margin-bottom: 10px;
 	margin-top: 20px;
+	font-family: "PFDinDisplayPro-Medium";
 }
 .product-description {
 	display: block;
@@ -459,6 +467,7 @@
 	font-size: 28px;
 	color: rgb(221, 63, 1);
 	line-height: 1.2;
+	font-family: "PFDinDisplayPro-Medium";
 }
 .product-btn {
 	display: block;
@@ -500,16 +509,20 @@
 .b-6-slider {
 	padding-bottom: 30px;
 }
-.b-6-slide img {
-	display: block;
-	margin: 0 auto;
+.b-6-slide a {
+	display: inline-block;
 	max-width: 100%;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	transition: all 0.5s;
 }
-.b-6-slide img:hover {
+.b-6-slide img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.b-6-slide a:hover {
 	-webkit-transform: translateY(-10px);
 	-moz-transform: translateY(-10px);
 	-ms-transform: translateY(-10px);
@@ -579,6 +592,7 @@
 	color: rgb(7, 48, 84);
 	line-height: 1.2;
 	margin: 0 0 20px;
+	font-family: "PFDinDisplayPro-Medium";
 }
 .info-list a {
 	display: block;
@@ -595,4 +609,54 @@
 }
 .info-list a:hover {
 	background-color: #ffae00;
+}
+
+
+
+@media screen and (max-width: 1280px) {
+	.b-1-slider .slick-arrow.slick-prev {
+		right: 118px;
+	}
+	.b-1-slider .slick-arrow.slick-next {
+		right: 30px;
+	}
+	.advantage-list li {
+		width: 49%;
+		margin-bottom: 30px;
+	}
+	.prim-list li {
+		width: 32%;
+	}
+	.info-list li {
+		display: block;
+		margin: 0 auto 30px !important;
+	}
+}
+@media screen and (max-width: 767px) {
+	.b-1-slide {
+		text-align: center;
+	}
+	.b-1-slide h2 {
+		margin-bottom: 47px;
+		text-align: center;
+		max-width: 100%;
+	}
+	.b-1-slide .b-block {
+		padding-bottom: 103px;
+	}
+	.b-1-slider .slick-arrow {
+		bottom: 29px;
+	}
+	.b-1-slider .slick-arrow.slick-prev {
+		right: calc(50% + 20px);
+	}
+	.b-1-slider .slick-arrow.slick-next {
+		right: calc(50% - 68px);
+	}
+	.advantage-list li {
+		width: 100%;
+	}
+	.prim-list li {
+		width: 100%;
+	}
 }
