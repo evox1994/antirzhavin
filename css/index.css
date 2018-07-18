@@ -509,6 +509,9 @@
 .b-6-slider {
 	padding-bottom: 30px;
 }
+.b-6-slide {
+	padding: 10px 5px 0;
+}
 .b-6-slide a {
 	display: inline-block;
 	max-width: 100%;
