@@ -55,4 +55,12 @@ $(document).ready(function(){
     });
 
     $('.fancybox').fancybox();
+    $('input[type="tel"]').inputmask('+7 999 999-99-99');
+    
+    $('form textarea').on('input',function(){
+        $(this).removeClass("error");
+    });
+    $('form input').on('input',function(){
+        $(this).removeClass("error");
+    });
 });

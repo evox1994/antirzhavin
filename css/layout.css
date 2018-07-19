@@ -724,6 +724,9 @@ select {
 		padding-left: 0;
 		padding: 8px 0;
 	}
+	.title br {
+		display: none;
+	}
 	body {
 		padding-top: 102px;
 	}
