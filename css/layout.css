@@ -380,6 +380,9 @@ select {
 	position: fixed;
 	border-bottom: 1px solid rgb(93, 93, 93);
 }
+.header.filter {
+	display: none;
+}
 .header-top {
 	padding-top: 8px;
 	padding-bottom: 18px;

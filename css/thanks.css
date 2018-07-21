@@ -1,0 +1,33 @@
+.b-1 {
+	background-color: rgb(7, 48, 84);
+}
+.b-1 .b-block {
+	padding-top: 140px;
+	padding-bottom: 177px;
+	min-height: 100vh;
+}
+.b-1 h1 {
+	display: block;
+	color: #ffffff;
+	font-size: 31px;
+	text-transform: uppercase;
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+.b-1 span {
+	display: block;
+	font-size: 22px;
+	color: #69a6dd;
+}
+
+
+
+
+@media screen and (max-width: 1280px) {
+	
+}
+@media screen and (max-width: 767px) {
+	.b-1 h1 br {
+		display: none;
+	}
+}

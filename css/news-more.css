@@ -1,0 +1,64 @@
+.b-1 {
+	background-color: rgb(7, 48, 84)
+}
+.b-1 .b-block {
+	padding-top: 150px;
+	padding-bottom: 171px;
+}
+.b-1 h1 {
+	display: block;
+	color: #ffffff;
+	font-size: 31px;
+	text-transform: uppercase;
+	line-height: 1.2;
+	margin-bottom: 10px;
+}
+.b-1 span {
+	display: block;
+	color: #74b3ea;
+	font-size: 18px;
+}
+
+.b-2 .b-block {
+	padding-top: 50px;
+	padding-bottom: 53px;
+}
+.news-list li {
+	max-width: 770px;
+	width: 100%;
+	margin: 0 auto;
+}
+.news-list img {
+	display: block;
+	margin: 0 auto 32px;
+	width: 100%;
+}
+.news-list p {
+	display: block;
+	font-size: 18px;
+	color: rgb(117, 117, 117);
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+.share-text {
+	font-family: "PFDinDisplayPro-Medium";
+	font-size: 21px;
+	line-height: 1.2;
+	color: #000000;
+	margin-bottom: 13px;
+}
+.share-text span {
+	color: rgb(7, 48, 84);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+	
+}
+@media screen and (max-width: 767px) {
+	
+}

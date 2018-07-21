@@ -1,0 +1,127 @@
+.b-1 {
+	background-image: url('../i/news-back.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.b-1 .b-block {
+	padding-top: 165px;
+	padding-bottom: 194px;
+}
+.b-1 h1 {
+	display: block;
+	text-align: left;
+	color: #ffffff;
+	font-size: 31px;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+.b-2 .b-block {
+	padding-top: 45px;
+	padding-bottom: 42px;
+}
+.news-left {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 300px;
+	width: 100%;
+	margin-right: 21px;
+}
+.news-list li {
+	margin-bottom: 24px;
+}
+.news-left img {
+	display: block;
+	margin: 0 auto 9px;
+	max-width: 100%;
+}
+.news-left span {
+	display: block;
+	font-size: 16px;
+	color: rgb(142, 142, 142);
+}
+.news-right {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 325px);
+	text-align: left;
+}
+.news-right span {
+	display: block;
+	padding-bottom: 13px;
+	position: relative;
+	font-size: 22px;
+	color: rgb(7, 48, 84);
+	line-height: 1.2;
+	font-family: "PFDinDisplayPro-Medium";
+	margin-bottom: 19px;
+}
+.news-right span::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	background-color: rgb(255, 221, 45);
+}
+.news-right p {
+	display: block;
+	font-size: 18px;
+	color: rgb(117, 117, 117);
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+.news-right a {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: rgb(255, 221, 45);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+	font-size: 21px;
+	color: rgb(51, 51, 51);
+	max-width: 300px;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+.news-right a:hover {
+	background-color: #ffae00;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+	
+}
+@media screen and (max-width: 767px) {
+	.b-1 h1 {
+		text-align: center;
+	}
+	.b-1 {
+		background-position: 70%;
+	}
+	.news-list li {
+		margin-bottom: 60px;
+	}
+	.news-left {
+		display: block;
+		margin: 0 auto 10px;
+	}
+	.news-right {
+		text-align: center;
+		width: 100%;
+		display: block;
+	}
+	.news-right p {
+		text-align: left;
+	}
+}
