@@ -372,7 +372,7 @@
 .b-5-form input:focus:-moz-placeholder {
 	color: transparent;
 }
-.b-5-form input:focus, .b-3-submit input:hover {
+.b-5-form input:focus, .b-5-submit input:hover {
 	background-color: #ffffff;
 }
 .b-5-form button {

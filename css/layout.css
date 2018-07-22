@@ -714,6 +714,232 @@ select {
 	color: #f0df00;
 }
 
+.popup {
+	display: block;
+	width: 90%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding: 44px 25px 40px;
+	box-sizing: border-box;
+	max-width: 370px;
+	text-align: center;
+}
+.popup-name {
+	display: block;
+	font-family: "PFDinDisplayPro-Medium";
+	font-size: 21px;
+	color: rgb(0, 0, 0);
+	line-height: 1.2;
+}
+.popup-subname {
+	display: block;
+	font-family: "PFDinDisplayPro-Light";
+	font-size: 21px;
+	color: #367cba;
+	line-height: 1.2;
+	margin-top: 15px;
+	margin-bottom: 12px;
+}
+.popup form {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+.popup form .wrapper {
+	display: none;
+}
+.popup form .wrapper.active {
+	display: block;
+	margin-top: 28px;
+}
+.popup form textarea {
+	display: block;
+	resize: none;
+	box-sizing: border-box;
+	width: 100%;
+	border-radius: 3px;
+	background-color: rgb(238, 242, 247);
+	font-size: 16px;
+	color: rgb(7, 48, 84);
+	line-height: 1.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+	padding: 20px;
+	height: 102px;
+	margin-bottom: 10px;
+	font-family: "PFDinDisplayPro-Light";
+	border: 1px solid rgb(238, 242, 247);
+}
+.popup form textarea::-webkit-input-placeholder {
+	color: rgb(7, 48, 84);
+	font-family: "PFDinDisplayPro-Light";
+}
+.popup form textarea:-moz-placeholder {
+	color: rgb(7, 48, 84);
+	font-family: "PFDinDisplayPro-Light";
+}
+.popup form textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+.popup form textarea:focus:-moz-placeholder {
+	color: transparent;
+}
+.popup form textarea:focus, .popup form textarea:hover {
+	background-color: #ffffff;
+}
+.popup form input {
+	display: block;
+	background-color: rgb(238, 242, 247);
+	border-radius: 5px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	padding: 17px 10px;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 16px;
+	color: rgb(7, 48, 84);
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: "PFDinDisplayPro-Light";
+	border: 1px solid rgb(238, 242, 247);
+}
+.popup form input::-webkit-input-placeholder {
+	color: rgb(7, 48, 84);
+	font-family: "PFDinDisplayPro-Light";
+}
+.popup form input:-moz-placeholder {
+	color: rgb(7, 48, 84);
+	font-family: "PFDinDisplayPro-Light";
+}
+.popup form input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+.popup form input:focus:-moz-placeholder {
+	color: transparent;
+}
+.popup form input:focus, .popup form input:hover {
+	background-color: #ffffff;
+}
+.popup-form-btn {
+	display: block;
+	padding: 17px 10px;
+	width: 100%;
+	background-color: rgb(255, 221, 45);
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 21px;
+	color: rgb(51, 51, 51);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+	border: 0;
+}
+.popup-form-btn:hover {
+	background-color: #ffae00;
+}
+.popup form button {
+	display: block;
+	padding: 17px 10px;
+	width: 100%;
+	background-color: rgb(255, 221, 45);
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 21px;
+	color: rgb(51, 51, 51);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+	border: 0;
+	margin-bottom: 15px;
+}
+.popup form button:hover {
+	background-color: #ffae00;
+}
+.popup form .button-text {
+	display: inline-block;
+	max-width: 100%;
+	font-size: 14px;
+	color: rgb(170, 170, 170);
+	line-height: 1.2;
+	position: relative;
+	text-align: left;
+	padding-left: 23px;
+}
+.popup form .button-text a {
+	color: rgb(170, 170, 170);
+}
+.popup form .button-text a:hover {
+	text-decoration: underline;
+}
+.popup form .button-text b {
+	display: block;
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border: 1px solid rgb(183, 183, 183);
+	border-radius: 3px;
+	left: 0;
+	top: calc(50% - 7px);
+}
+.popup form .button-text b:hover {
+	cursor: pointer;
+}
+.popup form .button-text b.active::before {
+	content: '';
+	display: block;
+	width: 6px;
+	height: 1px;
+	position: absolute;
+	left: 1px;
+	top: 7px;
+	background-color: rgb(183, 183, 183);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.popup form .button-text b.active::after {
+	content: '';
+	display: block;
+	width: 9px;
+	height: 1px;
+	position: absolute;
+	left: 4px;
+	top: 6px;
+	background-color: rgb(183, 183, 183);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.fancybox-close-small:after {
+	font-size: 30px;
+	font-family: "PFDinDisplayPro-Bold";
+	color: #ccd9e4;
+	background-color: transparent;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.fancybox-close-small:hover:after {
+	background-color: transparent;
+	color: rgb(7, 48, 84);
+}
+.fancybox-close-small {
+	width: 30px;
+	height: 30px;
+	right: 0;
+	top: 0;
+}
+
 
 
 

@@ -21,12 +21,4 @@ $(document).ready(function(){
 		}]
 	});
 
-	$('.button-text b').click(function(){
-		if ( $(this).hasClass('active') ) {
-			$(this).removeClass('active');
-		} else {
-			$(this).addClass('active');
-		}
-	});
-
 });
