@@ -15,6 +15,13 @@ $(document).ready(function(){
 		}]
 	});
 
+	$('.prim-slider').slick({
+		autoplay: true,
+		dots: true,
+		arrows: false,
+		slidesToShow: 1,
+	});
+
 	$('.b-6-slider').slick({
 		autoplay: true,
 		dots: true,

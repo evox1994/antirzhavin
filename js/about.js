@@ -13,6 +13,12 @@ $(document).ready(function(){
 		}]
 	});
 
+	$('.leaders-slider').slick({
+		autoplay: true,
+		dots: true,
+		arrows: false,
+	});
+
 	$('.works-slider').slick({
 		autoplay: true,
 		dots: true,

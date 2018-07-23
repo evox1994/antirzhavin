@@ -13,6 +13,12 @@ $(document).ready(function(){
 		}]
 	});
 
+	$('.instruction-slider').slick({
+		autoplay: true,
+		dots: true,
+		arrows: false,
+	});
+
 	$('.result-slider').slick({
 		autoplay: true,
 		dots: true,

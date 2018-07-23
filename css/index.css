@@ -1,12 +1,12 @@
 .b-1-slide .b-block{
 	padding-top: 75px;
-	padding-bottom: 53px;
 }
 .b-1-slide {
-	background-image: url('../i/b-1-slide-img.jpg');
+	/*background-image: url('../i/b-1-slide-img.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position: center;*/
 	text-align: left;
+	background-color: rgb(7, 48, 84);
 }
 .b-1-slide h2 {
 	display: block;
@@ -16,7 +16,11 @@
 	line-height: 1.2;
 	font-size: 31px;
 	text-align: left;
-	margin-bottom: 97px;
+}
+.b-1-slide img {
+	display: block;
+	margin: -60px auto 0;
+	max-width: 100%;
 }
 .b-1-slide .b-1-btn {
 	display: inline-block;
@@ -29,6 +33,8 @@
 	-moz-transition: all 1s;
 	-ms-transition: all 1s;
 	transition: all 1s;
+	clear: left;
+	margin-top: 97px;
 }
 .b-1-slide .b-1-btn:hover {
 	background-color: #ffae00;
@@ -178,19 +184,49 @@
 	max-width: 100%;
 	margin: 0 auto;
 }
-.prim-list li:hover .prim-image a {
+.prim-list li:hover .prim-image a, .prim-slide:hover .prim-image a {
 	-webkit-transform: translateY(-10px);
 	-moz-transform: translateY(-10px);
 	-ms-transform: translateY(-10px);
 	transform: translateY(-10px);
 }
-.prim-list span {
+.prim-list span, .prim-slide span {
 	display: block;
 	font-size: 21px;
 	line-height: 1.2;
 	color: #000000;
 	font-family: "PFDinDisplayPro-Regular";
 }
+.prim-slider {
+	display: none;
+	padding-bottom: 30px;
+}
+.prim-slide {
+	padding-top: 10px;
+}
+.prim-slider .slick-dots {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.prim-slider .slick-dots li {
+	display: inline-block;
+	margin: 0 2px;
+}
+.prim-slider .slick-dots li button {
+	font-size: 0;
+	background-color: transparent;
+	border: 3px solid rgb(215, 227, 237);
+	border-radius: 50%;
+	width: 11px;
+	height: 11px;
+	display: block;
+}
+.prim-slider .slick-dots li.slick-active button {
+	background-color: rgb(215, 227, 237);
+}
+
 
 .b-4 .b-block, .b-5 .b-block {
 	padding-top: 53px;
@@ -228,10 +264,10 @@
 	-moz-transform: skewX(-20deg);
 	-ms-transform: skewX(-20deg);
     transform: skewX(-20deg);
-	-webkit-animation: shimmer2 4s linear infinite normal;
-	-moz-animation: shimmer2 4s linear infinite normal;
-	-ms-animation: shimmer2 4s linear infinite normal;
-    animation: shimmer2 4s linear infinite normal;
+	-webkit-animation: shimmer2 6s linear infinite normal;
+	-moz-animation: shimmer2 6s linear infinite normal;
+	-ms-animation: shimmer2 6s linear infinite normal;
+    animation: shimmer2 6s linear infinite normal;
 }
 @-webkit-keyframes shimmer2 {
 	0% {
@@ -312,10 +348,10 @@
 	-moz-transform: skewX(-20deg);
 	-ms-transform: skewX(-20deg);
     transform: skewX(-20deg);
-	-webkit-animation: shimmer 4s linear infinite normal;
-	-moz-animation: shimmer 4s linear infinite normal;
-	-ms-animation: shimmer 4s linear infinite normal;
-    animation: shimmer 4s linear infinite normal;
+	-webkit-animation: shimmer 6s linear infinite normal;
+	-moz-animation: shimmer 6s linear infinite normal;
+	-ms-animation: shimmer 6s linear infinite normal;
+    animation: shimmer 6s linear infinite normal;
 }
 @-webkit-keyframes shimmer {
 	0% {
@@ -394,7 +430,7 @@
 	transition: all 0.5s;
 }
 .products-list li:hover .product-image {
-	box-shadow: 0 9px 17px 0 #000000;
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
 }
 .b-4 .products-list li:hover .product-image img {
 	-webkit-transform: translateY(-10px);
@@ -617,11 +653,20 @@
 
 
 @media screen and (max-width: 1280px) {
+	.b-1 .b-block {
+		padding-bottom: 30px;
+	}
 	.b-1-slider .slick-arrow.slick-prev {
 		right: 118px;
 	}
 	.b-1-slider .slick-arrow.slick-next {
 		right: 30px;
+	}
+	.b-1-slide img {
+		margin: -20px auto 0;
+	}
+	.b-1-slide .b-1-btn {
+		margin-top: 30px;
 	}
 	.advantage-list li {
 		width: 49%;
@@ -640,9 +685,16 @@
 		text-align: center;
 	}
 	.b-1-slide h2 {
-		margin-bottom: 47px;
 		text-align: center;
 		max-width: 100%;
+		float: none !important;
+	}
+	.b-1-slide img {
+		float: none !important;
+		margin: 0 auto;
+	}
+	.b-1-slide .b-1-btn {
+		float: none !important;
 	}
 	.b-1-slide .b-block {
 		padding-bottom: 103px;
@@ -658,6 +710,12 @@
 	}
 	.advantage-list li {
 		width: 100%;
+	}
+	.prim-list {
+		display: none;
+	}
+	.prim-slider {
+		display: block;
 	}
 	.prim-list li {
 		width: 100%;

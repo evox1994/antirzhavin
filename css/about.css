@@ -61,10 +61,10 @@
 	-moz-transform: skewX(-20deg);
 	-ms-transform: skewX(-20deg);
     transform: skewX(-20deg);
-	-webkit-animation: shimmer2 4s linear infinite normal;
-	-moz-animation: shimmer2 4s linear infinite normal;
-	-ms-animation: shimmer2 4s linear infinite normal;
-    animation: shimmer2 4s linear infinite normal;
+	-webkit-animation: shimmer2 6s linear infinite normal;
+	-moz-animation: shimmer2 6s linear infinite normal;
+	-ms-animation: shimmer2 6s linear infinite normal;
+    animation: shimmer2 6s linear infinite normal;
 }
 @-webkit-keyframes shimmer2 {
 	0% {
@@ -244,7 +244,7 @@
 	max-height: 100%;
 	margin: 0 auto;
 }
-.leaders-list span {
+.leaders-list span, .leaders-slider span {
 	display: block;
 	padding-bottom: 15px;
 	margin-bottom: 18px;
@@ -254,7 +254,7 @@
 	font-family: "PFDinDisplayPro-Regular";
 	position: relative;
 }
-.leaders-list span::before {
+.leaders-list span::before, .leaders-slider span::before {
 	content: '';
 	display: block;
 	background-color: rgb(255, 214, 22);
@@ -264,11 +264,37 @@
 	left: calc(50% - 58px);
 	bottom: 0;
 }
-.leaders-list p {
+.leaders-list p, .leaders-slider p {
 	display: block;
 	font-size: 18px;
 	color: rgb(74, 74, 74);
 	line-height: 1.2;
+}
+.leaders-slider {
+	display: none;
+	padding-bottom: 30px;
+}
+.leaders-slider .slick-dots {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.leaders-slider .slick-dots li {
+	display: inline-block;
+	margin: 0 2px;
+}
+.leaders-slider .slick-dots li button {
+	font-size: 0;
+	background-color: transparent;
+	border: 3px solid rgb(215, 227, 237);
+	border-radius: 50%;
+	width: 11px;
+	height: 11px;
+	display: block;
+}
+.leaders-slider .slick-dots li.slick-active button {
+	background-color: rgb(215, 227, 237);
 }
 
 .b-4 {
@@ -435,6 +461,12 @@
 	.leaders-list li {
 		width: 100%;
 		margin-bottom: 30px;
+	}
+	.b-5 .leaders-slider {
+		display: block;
+	}
+	.b-5 .leaders-list {
+		display: none;
 	}
 	.b-4-list li {
 		width: 100%;

@@ -378,7 +378,7 @@ select {
 }
 .header.active {
 	position: fixed;
-	border-bottom: 1px solid rgb(93, 93, 93);
+	border-bottom: 1px solid rgb(225, 225, 225);
 }
 .header.filter {
 	display: none;
@@ -639,6 +639,84 @@ select {
 }
 .footer-info-right ul li a {
 	display: block;
+}
+.footer-info-right ul li a:hover {
+	-webkit-animation: rot 1s infinite;
+	-moz-animation: rot 1s infinite;
+	-ms-animation: rot 1s infinite;
+	animation: rot 1s infinite;
+}
+@-webkit-keyframes rot {
+	0% {
+		transform: rotate(0deg);
+	}
+	13% {
+		transform: rotate(45deg);
+	}
+	37% {
+		transform: rotate(-45deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
+@-moz-keyframes rot {
+	0% {
+		transform: rotate(0deg);
+	}
+	13% {
+		transform: rotate(45deg);
+	}
+	37% {
+		transform: rotate(-45deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
+@-ms-keyframes rot {
+	0% {
+		transform: rotate(0deg);
+	}
+	13% {
+		transform: rotate(45deg);
+	}
+	37% {
+		transform: rotate(-45deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
+@keyframes rot {
+	0% {
+		transform: rotate(0deg);
+	}
+	13% {
+		transform: rotate(45deg);
+	}
+	37% {
+		transform: rotate(-45deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+
 }
 .footer-info-right ul li a img {
 	display: block;
