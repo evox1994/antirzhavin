@@ -60,6 +60,10 @@
 .subfilter {
 	margin-bottom: 71px;
 	text-align: left;
+	display: none;
+}
+.subfilter.active {
+	display: block;
 }
 .subfilter li {
 	display: inline-block;
@@ -101,6 +105,10 @@
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .reviews-list .name {
 	display: block;
@@ -124,6 +132,12 @@
 .reviews-list a:hover {
 	color: rgb(7, 48, 84);
 }
+.reviews-list a:hover img {
+	-webkit-filter: brightness(0.5);
+	-moz-filter: brightness(0.5);
+	-ms-filter: brightness(0.5);
+	filter: brightness(0.5);
+}
 .reviews-list p {
 	display: block;
 	max-width: 200px;
@@ -137,9 +151,13 @@
 	position: fixed;
 	padding: 5px 10px;
 	background-color: #000000;
-	z-index: 50;
-	right: 0;
-	bottom: 0;
+	z-index: 150;
+	left: 50%;
+	top: 15px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 .filter-btn span {
 	color: #ffffff;
@@ -343,5 +361,14 @@
 	}
 	.b-3-text h2 br {
 		display: none;
+	}
+}
+@media screen and (max-width: 450px) {
+	.filter-btn {
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+		transform: translateX(0px);
+		left: 60px;
 	}
 }

@@ -36,6 +36,10 @@
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .reviews-list .name {
 	display: block;
@@ -74,6 +78,12 @@
 }
 .reviews-list a:hover {
 	color: rgb(7, 48, 84);
+}
+.reviews-list a:hover {
+	-webkit-filter: brightness(0.5);
+	-moz-filter: brightness(0.5);
+	-ms-filter: brightness(0.5);
+	filter: brightness(0.5);
 }
 .reviews-list p {
 	display: block;

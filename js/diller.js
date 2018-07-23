@@ -27,6 +27,12 @@ $(document).ready(function(){
 		}]
 	});
 
+	$('.prim-slider').slick({
+		autoplay: true,
+		dots: true,
+		arrows: false,
+	});
+
 	$('.b-9-slider').slick({
 		autoplay: true,
 		dots: true,

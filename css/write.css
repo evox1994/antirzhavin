@@ -36,6 +36,10 @@
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .reviews-list .date {
 	display: block;
@@ -58,6 +62,10 @@
 	position: relative;
 	display: inline-block;
 	max-width: 100%;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .reviews-list .name span::before {
 	content: '';
@@ -89,6 +97,22 @@
 	color: rgb(114, 114, 114);
 	line-height: 1.2;
 	font-size: 16px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.reviews-list li:hover .name span {
+	color: #1188f1;
+}
+.reviews-list li:hover p {
+	color: #000000;
+}
+.reviews-list a:hover img {
+	-webkit-filter: brightness(0.5);
+	-moz-filter: brightness(0.5);
+	-ms-filter: brightness(0.5);
+	filter: brightness(0.5);
 }
 
 .b-3 {

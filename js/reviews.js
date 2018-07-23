@@ -2,9 +2,13 @@ $(document).ready(function(){
 
 	function filter() {
 		var f = $('.filter li.active').data('filter');
+		var sub = $('.filter li.active').data('sub');
 		var sf;
 
-		$('.subfilter li').each(function(){
+		$('.subfilter').removeClass('active');
+		$('.' + sub).addClass('active');
+
+		$('.subfilter.active li').each(function(){
 			if ( $(this).hasClass('active') ) {
 				sf = $(this).data('filter');
 			}
@@ -70,13 +74,17 @@ $(document).ready(function(){
 
 	$('.btn-next').click(function(){
 		var el = $(this).attr('href');
-		if ( $(this).parent().find('textarea').val().length ) {
-			$(this).parent().removeClass('active');
-			$(el).addClass('active');
-		} else {
-			$(this).parent().find('textarea').addClass('error');
-		}
-		return false;
+        if ( $(this).parent().find('textarea').val().length ) {
+            $('.step-form').animate({opacity: 0}, 300);
+            setTimeout(function(){
+                $('.step-form .wrapper').removeClass('active');
+                $(el).addClass('active');
+                $('.step-form').animate({opacity: 1}, 300);
+            },300);
+        } else {
+            $(this).parent().find('textarea').addClass('error');
+        }
+        return false;
 	});
 
 	$('.filter-btn').click(function(){

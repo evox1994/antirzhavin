@@ -23,7 +23,7 @@
 .otvet-list li {
 	display: block;
 	width: 100%;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .vopros-text {
 	display: block;
@@ -71,21 +71,23 @@
 	color: rgb(7, 48, 84);
 }
 .otvet-text {
-	display: none;
+	display: inline-block;
 	width: 100%;
-	padding: 20px 0 0;
 	font-size: 18px;
+	padding: 20px 0 0;
 	color: rgb(117, 117, 117);
 	line-height: 1.2;
 	overflow: hidden;
+	max-height: 0;
 	text-align: left;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	transition: all 0.5s;
+	height: auto;
+	-webkit-transition: max-height 1s;
+	-moz-transition: max-height 1s;
+	-ms-transition: max-height 1s;
+	transition: max-height 1s;
 }
 .otvet-text.active {
-	display: block;
+	max-height: 500px;
 }
 
 .b-3 {
@@ -239,6 +241,9 @@
 		float: none !important;
 		margin: 0 auto;
 	}
+	.otvet-text.active {
+		max-height: 700px;
+	}
 }
 @media screen and (max-width: 767px) {
 	.b-1 h1 {
@@ -246,6 +251,9 @@
 	}
 	.b-1 {
 		background-position: 70%;
+	}
+	.otvet-text.active {
+		max-height: 1000px;
 	}
 	.b-3-submit {
 		padding: 25px 20px;

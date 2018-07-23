@@ -345,7 +345,7 @@ select {
 .mobile-menu {
 	display: none;
 	position: fixed;
-	z-index: 100;
+	z-index: 200;
 	top: -200%;
 	left: 0;
 	width: 100%;
@@ -1017,6 +1017,34 @@ select {
 	right: 0;
 	top: 0;
 }
+.popup-menu-name {
+	display: block;
+	text-align: center;
+	font-family: "PFDinDisplayPro-Medium";
+	font-size: 25px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.popup-menu ul {
+	display: block;
+	margin-bottom: 30px;
+}
+.popup-menu ul li {
+	margin-bottom: 5px;
+}
+.popup-menu ul li a {
+	font-size: 16px;
+	font-family: "PFDinDisplayPro-Light";
+	color: rgb(7, 48, 84);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.popup-menu ul li a:hover {
+	color: #1188f1;
+}
+
 
 
 
@@ -1083,7 +1111,7 @@ select {
 	}
 	.header {
 		position: fixed;
-		border-bottom: 1px solid rgb(93, 93, 93);
+		border-bottom: 1px solid rgb(225, 225, 225);
 	}
 	.b-block {
 		padding: 0 10px;
