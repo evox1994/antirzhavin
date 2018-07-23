@@ -409,8 +409,58 @@ select {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-	height: 51px;
-	width: 270px;
+}
+.header-city a {
+	display: block;
+	padding: 5px 5px 5px 25px;
+	position: relative;
+	font-size: 18px;
+	font-family: "PFDinDisplayPro-Medium";
+	text-align: left;
+}
+.header-city a::after {
+	content: '';
+	background-color: #000000;
+	display: block;
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	top: 15px;
+	left: 3px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.header-city a::before {
+	content: '';
+	background-color: #000000;
+	display: block;
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	top: 15px;
+	left: 9px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.header-city a:hover:before, .header-city a:hover:after {
+	background-color: #1188f1;
+}
+.header-city a span {
+	color: rgb(143, 143, 143);
+	font-size: 16px;
+	font-family: "PFDinDisplayPro-Light";
 }
 .header-address {
 	padding-left: 30px;
@@ -545,8 +595,58 @@ select {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-	height: 51px;
-	width: 270px;
+}
+.footer-city a {
+	display: block;
+	padding: 5px 5px 5px 25px;
+	position: relative;
+	font-size: 18px;
+	font-family: "PFDinDisplayPro-Medium";
+	text-align: left;
+}
+.footer-city a::after {
+	content: '';
+	background-color: #000000;
+	display: block;
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	top: 15px;
+	left: 3px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.footer-city a::before {
+	content: '';
+	background-color: #000000;
+	display: block;
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	top: 15px;
+	left: 9px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.footer-city a:hover:before, .footer-city a:hover:after {
+	background-color: #1188f1;
+}
+.footer-city a span {
+	color: rgb(143, 143, 143);
+	font-size: 16px;
+	font-family: "PFDinDisplayPro-Light";
 }
 .footer-address {
 	padding-left: 30px;
@@ -808,6 +908,7 @@ select {
 	font-size: 21px;
 	color: rgb(0, 0, 0);
 	line-height: 1.2;
+	text-align: center;
 }
 .popup-subname {
 	display: block;
@@ -1043,6 +1144,50 @@ select {
 }
 .popup-menu ul li a:hover {
 	color: #1188f1;
+}
+.popup-city {
+	max-width: 830px;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	padding: 54px 50px;
+	width: 100%;
+	text-align: center;
+}
+.popup-city .popup-name {
+	margin-bottom: 40px;
+}
+.popup-city .row {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 32%;
+	padding: 0 10px;
+}
+.popup-city ul {
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.popup-city ul li {
+	font-size: 18px;
+	color: rgb(92, 148, 197);
+	margin-bottom: 5px;
+	font-family: "PFDinDisplayPro-Medium";
+	text-align: left;
+}
+.popup-city ul li a {
+	font-family: "PFDinDisplayPro-Light";
+	color: rgb(100, 100, 100);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.popup-city ul li a.active {
+	color: #f09800;
+}
+.popup-city ul li a:hover {
+	color: #000000;
 }
 
 

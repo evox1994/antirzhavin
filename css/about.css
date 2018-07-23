@@ -185,6 +185,14 @@
 .year-list li:hover {
 	background-color: #e8edf2;
 }
+.year-list-name {
+	display: inline-block;
+	vertical-align: middle;
+	width: 25%;
+	box-sizing: border-box;
+	padding: 0 5px;
+	text-align: left;
+}
 .year-list li span {
 	display: inline-block;
 	vertical-align: middle;
@@ -193,17 +201,15 @@
 	font-size: 21px;
 	color: rgb(7, 48, 84);
 	line-height: 1.2;
-	width: 25%;
-	box-sizing: border-box;
-	padding: 0 5px 8px;
+	padding-bottom: 8px;
 }
 .year-list li span::before {
 	content: '';
 	background-color: rgb(255, 221, 45);
-	width: 130px;
+	width: 100%;
 	height: 3px;
 	position: absolute;
-	left: calc(50% - 65px);
+	left: 0;
 	bottom: 0;
 }
 .year-list li p {
@@ -451,9 +457,10 @@
 }
 
 @media screen and (max-width: 767px) {
-	.year-list li span {
+	.year-list-name {
 		width: 100%;
 		margin-bottom: 30px;
+		text-align: center;
 	}
 	.year-list li p {
 		width: 100%;

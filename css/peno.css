@@ -404,6 +404,7 @@
 	.year-list-name {
 		width: 100%;
 		margin-bottom: 30px;
+		text-align: center;
 	}
 	.year-list li p {
 		width: 100%;
