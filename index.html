@@ -306,7 +306,7 @@
 				<li>
 					<div class="info-image"><img src="i/info-2.png"></div>
 					<span>Полная презентация<br> о компании</span>
-					<a href="#">Получить</a>
+					<a href="#popup-order-btn" class="fancybox-order" data-name="Антиржавин 1 л." data-price="379">Получить</a>
 				</li>
 				<li>
 					<div class="info-image"><img src="i/info-3.png"></div>
@@ -520,6 +520,25 @@
 				</ul>
 			</div>
 		</div>
+		<div class="popup popup-order" id="popup-order">
+			<div class="popup-order-title">Ваш заказ</div>
+			<ul class="popup-order-list">
+				<li>
+					<div class="popup-order-list-name"><span></span></div>
+					<div class="popup-order-list-quantity"><div class="quantity-less"></div><span></span><div class="quantity-more"></div></div>
+					<div class="popup-order-list-price"><span></span> руб.</div>
+					<div class="popup-order-list-del"></div>
+				</li>
+			</ul>
+			<div class="popup-order-summa">Сумма <span>0</span> руб.</div>
+			<form>
+				<input type="text" placeholder="Как мы можем к Вам обращаться?">
+				<input type="tel" placeholder="Ваш телефон">
+				<button type="submit">Заказать</button>
+				<p class="button-text"><b class="active"></b>Отправляя заявку, Вы соглашаетесь<br> с <a href="#" target="_blank">политикой конфиденциальности</a></p>
+			</form>
+		</div>
+		<a id="popup-order-btn" href="#popup-order" class="fancybox"></a>
 	</div>
 </body>
 </html>

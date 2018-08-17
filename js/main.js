@@ -86,5 +86,55 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     });
+
+    /*$('.fancybox-order').fancybox({
+        afterLoad: function(){
+            var name, price;
+
+            $('.fancybox-order').click(function(){
+                name = $(this).data('name');
+                price = $(this).data('price');
+            });
+
+            console.log(name + ' ' + price);
+
+            $('.popup-order-list-name span').text(name);
+            $('.popup-order-list-price span').text(price);
+            $('.popup-order-list-quantity span').text(1);
+        }
+    });*/
+
+    $('.fancybox-order').click(function(){
+        var name = $(this).data('name');
+        var price = $(this).data('price');
+        var fancy = $(this).attr('href');
+
+        $('.popup-order-list-name span').text(name);
+        $('.popup-order-list-price span').text(price);
+        $('.popup-order-list-quantity span').text(1);
+        $(fancy).click();
+        return false;
+    });
+
+    $('body').on('click','.quantity-more',function(){
+        var col = $(this).parent().find('span').text();
+        var col = Number(col);
+        col++;
+        $(this).parent().find('span').text(col);
+    });
+
+    $('body').on('click','.quantity-less',function(){
+        var col = $(this).parent().find('span').text();
+        var col = Number(col);
+
+        if ( col > 1 ) {
+            col--;
+            $(this).parent().find('span').text(col);
+        }
+    });
+
+    $('body').on('click','.popup-order-list-del',function(){
+        $(this).parent().remove();
+    });
     
 });

@@ -1189,6 +1189,115 @@ select {
 .popup-city ul li a:hover {
 	color: #000000;
 }
+.popup-order-title {
+	display: block;
+	font-family: "PFDinDisplayPro-Medium";
+	font-size: 21px;
+	color: #000000;
+	text-align: left;
+	margin-bottom: 12px;
+}
+.popup-order-list li:first-child {
+	border-top: 1px solid rgb(225, 225, 225);
+}
+.popup-order-list li {
+	border-bottom: 1px solid rgb(225, 225, 225);
+	box-sizing: border-box;
+	padding: 12px 0;
+}
+.popup-order-list-name {
+	width: calc(100% - 165px);
+	overflow-x: hidden;
+	display: inline-block;
+	vertical-align: middle;
+}
+.popup-order-list-name span {
+	display: block;
+	text-align: left;
+	font-family: "PFDinDisplayPro-Light";
+	font-size: 14px;
+	color: rgb(121, 121, 121);
+}
+.popup-order-list-quantity {
+	width: 68px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+.popup-order-list-quantity span {
+	display: inline-block;
+	vertical-align: top;
+	font-family: "PFDinDisplayPro-Light";
+	margin: 0 6px;
+	font-size: 14px;
+}
+.quantity-less, .quantity-more {
+	width: 15px;
+	height: 15px;
+	border: 1px solid rgb(225, 225, 225);
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.quantity-less::before, .quantity-more::before, .popup-order-list-del::before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 1px;
+	position: absolute;
+	left: calc(50% - 5px);
+	top: calc(50% - 0.5px);
+	background-color: rgb(225, 225, 225);
+}
+.quantity-more::after, .popup-order-list-del::after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 1px;
+	position: absolute;
+	left: calc(50% - 5px);
+	top: calc(50% - 0.5px);
+	background-color: rgb(225, 225, 225);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.popup-order-list-price {
+	width: 60px;
+	text-align: right;
+	margin-right: 5px;
+	font-family: "PFDinDisplayPro-Light";
+	font-size: 14px;
+	color: rgb(121, 121, 121);
+	display: inline-block;
+	vertical-align: middle;
+}
+.popup-order-list-del {
+	width: 15px;
+	height: 15px;
+	border: 1px solid rgb(225, 225, 225);
+	border-radius: 50%;
+	box-sizing: border-box;
+	position: relative;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	display: inline-block;
+	vertical-align: middle;
+}
+.quantity-less:hover, .quantity-more:hover, .popup-order-list-del:hover {
+	cursor: pointer;
+}
+.popup-order-summa {
+	text-align: right;
+	font-family: "PFDinDisplayPro-Medium";
+	margin: 15px auto;
+	font-size: 14px;
+}
 
 
 
