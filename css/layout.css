@@ -901,6 +901,7 @@ select {
 	box-sizing: border-box;
 	max-width: 370px;
 	text-align: center;
+	position: relative;
 }
 .popup-name {
 	display: block;
@@ -1152,6 +1153,7 @@ select {
 	padding: 54px 50px;
 	width: 100%;
 	text-align: center;
+	position: relative;
 }
 .popup-city .popup-name {
 	margin-bottom: 40px;
@@ -1297,6 +1299,14 @@ select {
 	font-family: "PFDinDisplayPro-Medium";
 	margin: 15px auto;
 	font-size: 14px;
+}
+.popup-bg {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: -10;
+	left: 0;
+	top: 0;
 }
 
 

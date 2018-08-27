@@ -87,23 +87,6 @@ $(document).ready(function(){
         }
     });
 
-    /*$('.fancybox-order').fancybox({
-        afterLoad: function(){
-            var name, price;
-
-            $('.fancybox-order').click(function(){
-                name = $(this).data('name');
-                price = $(this).data('price');
-            });
-
-            console.log(name + ' ' + price);
-
-            $('.popup-order-list-name span').text(name);
-            $('.popup-order-list-price span').text(price);
-            $('.popup-order-list-quantity span').text(1);
-        }
-    });*/
-
     $('.fancybox-order').click(function(){
         var name = $(this).data('name');
         var price = $(this).data('price');
@@ -111,30 +94,49 @@ $(document).ready(function(){
 
         $('.popup-order-list-name span').text(name);
         $('.popup-order-list-price span').text(price);
+        $('.popup-order-summa span').text(price);
         $('.popup-order-list-quantity span').text(1);
         $(fancy).click();
         return false;
     });
 
     $('body').on('click','.quantity-more',function(){
+        var price = $(this).parent().parent().find('.popup-order-list-price span').text();
+        var price = Number(price);
+        var sum = $('.popup-order-summa span').text();
+        var sum = Number(sum);
         var col = $(this).parent().find('span').text();
         var col = Number(col);
         col++;
+        sum = sum + price;
         $(this).parent().find('span').text(col);
+        $('.popup-order-summa span').text(sum);
     });
 
     $('body').on('click','.quantity-less',function(){
         var col = $(this).parent().find('span').text();
         var col = Number(col);
+        var price = $(this).parent().parent().find('.popup-order-list-price span').text();
+        var price = Number(price);
+        var sum = $('.popup-order-summa span').text();
+        var sum = Number(sum);
 
         if ( col > 1 ) {
             col--;
+            sum = sum - price;
             $(this).parent().find('span').text(col);
+            $('.popup-order-summa span').text(sum);
+        } else {
+            $.fancybox.close();
         }
     });
 
     $('body').on('click','.popup-order-list-del',function(){
-        $(this).parent().remove();
+        $.fancybox.close();
+    });
+
+    $('.popup-bg').click(function(){
+        $.fancybox.close();
     });
     
 });
