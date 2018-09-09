@@ -1,6 +1,12 @@
 $(document).ready(function(){
 
-	$('.b-1-slider').slick();
+	$('.b-1-slider').slick({});
+
+	$('.b-1-slider').on('afterChange',function(event, slick, currentSlide){
+		$('.slide-number').text(currentSlide + 1);
+	});
+
+	$('.slide-count').text($('.b-1-slider').slick('getSlick').slideCount);
 
 	$('.clients-slider').slick({
 		autoplay: true,

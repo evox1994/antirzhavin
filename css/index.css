@@ -1,6 +1,18 @@
 .b-1-slide .b-block{
 	padding-top: 75px;
 }
+.slider-number {
+	display: block;
+	position: absolute;
+	background-color: rgba(57, 62, 71, 0.8);
+	right: calc(50% - 545px);
+	top: 30px;
+	color: #ffffff;
+	font-family: "PFDinDisplayPro-Light";
+	z-index: 1;
+	padding: 10px 15px;
+	border-radius: 20px;
+}
 .b-1-slide {
 	/*background-image: url('../i/b-1-slide-img.jpg');
 	background-size: cover;
@@ -650,6 +662,9 @@
 	.b-1 .b-block {
 		padding-bottom: 30px;
 	}
+	.slider-number {
+		right: 70px;
+	}
 	.b-1-slider .slick-arrow.slick-prev {
 		right: 118px;
 	}
@@ -695,6 +710,10 @@
 	}
 	.b-1-slider .slick-arrow {
 		bottom: 29px;
+	}
+	.slider-number {
+		right: calc(50% - 30px);
+		top: 20px;
 	}
 	.b-1-slider .slick-arrow.slick-prev {
 		right: calc(50% + 20px);
