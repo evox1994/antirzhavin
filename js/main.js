@@ -138,5 +138,12 @@ $(document).ready(function(){
     $('.popup-bg').click(function(){
         $.fancybox.close();
     });
+ 
+    $('.volume-item').click(function(){
+        if ( !$(this).hasClass('active') ){
+            $(this).parents('.volume').find('.volume-item').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
     
 });

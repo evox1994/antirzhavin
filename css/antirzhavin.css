@@ -27,12 +27,44 @@
 	color: rgb(116, 179, 234);
 	line-height: 1.2;
 	font-family: "PFDinDisplayPro-Medium";
-	margin-top: 50px;
+	margin-top: 30px;
 	clear: left;
 }
 .b-1 .buttons, .b-7 .buttons {
 	margin-top: 20px;
 	clear: left;
+}
+.b-1 .volume {
+	width: 240px;
+	margin-top: 30px;
+	clear: left;
+}
+.b-1 .volume-item {
+	display: block;
+	position: relative;
+	float: left;
+	width: 25%;
+	padding-bottom: 13px;
+	font-family: 'PFDinDisplayPro-Light';
+	font-size: 21px;
+	color: rgb(116, 179, 234);
+}
+.b-1 .volume-item:hover {
+	cursor: pointer;
+}
+.b-1 .volume-item.active {
+	font-family: 'PFDinDisplayPro-Medium';
+	color: #ffffff;
+}
+.b-1 .volume-item.active::before {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: rgb(255, 221, 45);
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 .b-1-btn1 {
 	display: inline-block;

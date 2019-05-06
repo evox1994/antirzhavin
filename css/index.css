@@ -497,6 +497,37 @@
 	background-color: rgb(255, 221, 45);
 	border-radius: 50%;
 }
+.products-list .volume {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.products-list .volume-item {
+	display: block;
+	position: relative;
+	float: left;
+	width: 25%;
+	padding-bottom: 13px;
+	font-family: 'PFDinDisplayPro-Light';
+	font-size: 21px;
+	color: rgb(68, 68, 68);
+}
+.products-list .volume-item:hover {
+	cursor: pointer;
+}
+.products-list .volume-item.active {
+	font-family: 'PFDinDisplayPro-Medium';
+	color: rgb(7, 48, 84);
+}
+.products-list .volume-item.active::before {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: rgb(255, 221, 45);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
 .product-price {
 	display: block;
 	text-align: center;

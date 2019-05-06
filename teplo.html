@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/teplo.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/teplo.js"></script>
+
+</head>
+<body>
+
+	<div class="b b-1">
+		<div class="b-block">
+			<div class="b-1-wrap">
+				<h1>узнайте загрязненность своего теплообменника <span>за 1 минуту</span> в соответствии с законом жкх</h1>
+				<div class="b-1-slider">
+					<div class="b-1-slide"><img src="i/teplo-b-1-img.png"></div>
+					<div class="b-1-slide"><img src="i/teplo-b-1-img.png"></div>
+				</div>
+				<a href="#" class="b-1-btn">Пройти тест</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-2">
+		<div class="step step-1 active">
+			<div class="b-block">
+				<div class="step-title">Выберите тип теплообменника</div>
+				<ul class="step-list type-1">
+					<li>
+						<div class="answer">
+							<div class="answer-image"><img src="i/teplo-s-1-i-1.png"></div>
+							<div class="answer-text">Тип теплообменника №1</div>
+							<a href=".step-2" class="answer-btn step-type-btn" data-detail="type-1">Выбрать</a>
+						</div>
+					</li>
+					<li>
+						<div class="answer">
+							<div class="answer-image"><img src="i/teplo-s-1-i-2.png"></div>
+							<div class="answer-text">Тип теплообменника №2</div>
+							<a href=".step-2" class="answer-btn step-type-btn" data-detail="type-2">Выбрать</a>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="info-name">Как определить свой<br>тип теплообменника?</div>
+							<p>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы.<br><br>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы. Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы.<br><br>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="step step-2">
+			<div class="b-block">
+				<div class="step-title">Выберите тип расчёта</div>
+				<ul class="step-list type-2">
+					<li>
+						<div class="answer">
+							<div class="answer-image"><img src="i/teplo-s-2-i-1.png"></div>
+							<div class="answer-text">Простой</div>
+							<a href="#" class="answer-btn next-btn answer-btn-plain">Выбрать</a>
+						</div>
+					</li>
+					<li>
+						<div class="answer">
+							<div class="answer-image"><img src="i/teplo-s-2-i-2.png"></div>
+							<div class="answer-text">Детальный</div>
+							<a href="#" class="answer-btn next-btn answer-btn-detailed">Выбрать</a>
+						</div>
+					</li>
+					<li>
+						<div class="answer">
+							<div class="answer-image"><img src="i/teplo-s-2-i-3.png"></div>
+							<div class="answer-text">Профессиональный</div>
+							<a href="#" class="answer-btn fancybox">Выбрать</a>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="info-name">Что даёт каждый<br>из способов</div>
+							<p>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы.<br><br>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы. Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="step step-3 step-3-1">
+			<div class="b-block">
+				<div class="step-title">Введите необходимые данные</div>
+				<div class="step-wrap">
+					<div class="scheme">
+						<div class="scheme-wrap">
+							<div class="inputs">
+								<input type="number" placeholder="P1=">
+								<input type="number" placeholder="P3=">
+								<input type="number" placeholder="T1=" value="2">
+								<input type="number" placeholder="P4=">
+								<input type="number" placeholder="T2=">
+								<input type="number" placeholder="P2=">
+							</div>
+							<img src="i/scheme-1.png">
+						</div>
+						<div class="scheme-buttons">
+							<a href=".step-5" class="scheme-btn" data-result=".step-6-1">Далее</a>
+							<a href="#" class="scheme-btn-more fancybox">Остались вопросы?</a>
+						</div>
+					</div>
+					<div class="info-wrap">
+						<div class="info">
+							<div class="info-name hash">Описание показателей<br>теплообменника</div>
+							<p>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы.<br><br>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы. Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step step-3 step-3-2">
+			<div class="b-block">
+				<div class="step-title">Введите необходимые данные</div>
+				<div class="step-wrap">
+					<div class="scheme">
+						<div class="scheme-wrap">
+							<div class="inputs">
+								<input type="number" placeholder="P1=">
+								<input type="number" placeholder="P3=">
+								<input type="number" placeholder="T1=" value="2">
+								<input type="number" placeholder="P4=">
+								<input type="number" placeholder="T2=">
+								<input type="number" placeholder="P2=">
+							</div>
+							<img src="i/scheme-2.png">
+						</div>
+						<div class="scheme-buttons">
+							<a href=".step-5" class="scheme-btn" data-result=".step-6-1">Далее</a>
+							<a href="#" class="scheme-btn-more fancybox">Остались вопросы?</a>
+						</div>
+					</div>
+					<div class="info-wrap">
+						<div class="info">
+							<div class="info-name hash">Описание показателей<br>теплообменника</div>
+							<p>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы.<br><br>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы. Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step step-5">
+			<div class="b-block">
+				<div class="step-title">Укажите дату последней промывки</div>
+				<div class="date-wrap">
+					<input type="date" placeholder="Введите дату" class="required">
+					<div class="input-text"><div class="input-radio"></div>не знаю дату последней промывки</div>
+					<div class="buttons">
+						<a href="#" class="step-btn step-5-btn">Далее</a>
+						<a href="#" class="step-btn-more fancybox">Остались вопросы?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step step-4 step-4-1">
+			<div class="b-block">
+				<div class="step-title">Введите данные по месяцам за 2018 год</div>
+				<div class="step-wrap">
+					<div class="table-wrap">
+						<div class="table-block">
+							<table>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>Янв</td>
+										<td>Фев</td>
+										<td>Мар</td>
+										<td>Апр</td>
+										<td>Май</td>
+										<td>Июн</td>
+										<td>Июл</td>
+										<td>Авг</td>
+										<td>Сен</td>
+										<td>Окт</td>
+										<td>Ноя</td>
+										<td>Дек</td>
+									</tr>
+									<tr>
+										<td>P1 кгс/см2</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>P3</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>Т1 * С°</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>P4</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>Т2 * С°</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>P2 кгс/см2</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="table-text">
+							<p>Можно указать только те, которые имеются</p>
+							<div class="buttons">
+								<a href=".step-5" class="step-btn step-4-btn" data-result=".step-6-2">Далее</a>
+								<a href="#" class="step-btn-more fancybox">Остались вопросы?</a>
+							</div>
+						</div>
+					</div>
+					<img src="i/table-img-1.png" class="table-img">
+				</div>
+			</div>
+		</div>
+		<div class="step step-4 step-4-2">
+			<div class="b-block">
+				<div class="step-title">Введите данные по месяцам за 2018 год</div>
+				<div class="step-wrap">
+					<div class="table-wrap">
+						<div class="table-block">
+							<table>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>Янв</td>
+										<td>Фев</td>
+										<td>Мар</td>
+										<td>Апр</td>
+										<td>Май</td>
+										<td>Июн</td>
+										<td>Июл</td>
+										<td>Авг</td>
+										<td>Сен</td>
+										<td>Окт</td>
+										<td>Ноя</td>
+										<td>Дек</td>
+									</tr>
+									<tr>
+										<td>P1 кгс/см2</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>P3</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>Т1 * С°</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>P4</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>Т2 * С°</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+									<tr>
+										<td>P2 кгс/см2</td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+										<td><input type="number"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="table-text">
+							<p>Можно указать только те, которые имеются</p>
+							<div class="buttons">
+								<a href=".step-5" class="step-btn step-4-btn" data-result=".step-6-2">Далее</a>
+								<a href="#" class="step-btn-more fancybox">Остались вопросы?</a>
+							</div>
+						</div>
+					</div>
+					<img src="i/table-img-2.png" class="table-img">
+				</div>
+			</div>
+		</div>
+		<div class="step step-6 step-6-1">
+			<div class="result">
+				<div class="b-block">
+					<div class="title">Результат</div>
+					<ul class="result-list">
+						<li class="true"><div class="li-info"></div>Средний уровень T1 - 1.8 С° соответствует <span>(оптимальный от 0 до 2 С°)</span></li>
+						<li class="true"><div class="li-info"></div>Средний уровень T2 - 68 С° соответствует <span>(оптимальный от 65 С°)</span></li>
+						<li class="false"><div class="li-info"></div>Средний уровень P1 - 6.2 кгс/см2 не соответствует <span>(оптимальный до 2 кгс / см2)</span></li>
+						<li class="false"><div class="li-info"></div>Средний уровень P2 - 6.2 кгс/см2 не соответствует <span>(оптимальный до 2 кгс / см2)</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="actions">
+				<div class="b-block">
+					<div class="title">Итого - вам необходимо</div>
+					<ul class="actions-list">
+						<li><div class="li-info"></div>Выполнить промывку теплообменника</li>
+						<li><div class="li-info"></div>Выполнить промывку системы отопления</li>
+						<li><div class="li-info"></div>Заменить входную трубу на новую</li>
+						<li><div class="li-info"></div>Следить за расходом тепла</li>
+					</ul>
+				</div>
+			</div>
+			<div class="form-block">
+				<div class="b-block">
+					<form>
+						<div class="name">У нас готово для вас решение данной проблемы!<br>Оставьте заявку</div>
+						<input type="text" placeholder="Как мы можем к Вам обращаться?">
+						<input type="tel" placeholder="Ваш телефон">
+						<button type="submit">Отправить заявку</button>
+						<p class="button-text"><b class="active"></b>Отправляя заявку, Вы соглашаетесь<br> с <a href="#" target="_blank">политикой конфиденциальности</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="step step-6 step-6-2">
+			<div class="result-more">
+				<div class="b-block">
+					<div class="title">Детальный рассчёт</div>
+					<div class="item">
+						<div class="graphs">
+							<div class="graph-wrap">
+								<div class="graph t2" id="graph-t2"></div>
+								<div class="graph-text"></div>
+							</div>
+						</div>
+						<div class="item-info true">
+							<div class="item-info-icon"></div>
+							<p>Средний уровень T2 - <span>68 С°<br> соответствует</span> <mark>(оптимальный от 65 С°)</mark></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="graphs">
+							<div class="graph-wrap">
+								<div class="graph p1" id="graph-p1"></div>
+								<div class="graph-text">Средний уровень P1 - 6.2 кгс/см2</div>
+							</div>
+							<div class="graph-wrap">
+								<div class="graph p2" id="graph-p2"></div>
+								<div class="graph-text">Средний уровень P2 - 4.1 кгс/см2</div>
+							</div>
+						</div>
+						<div class="item-info false">
+							<div class="item-info-icon"></div>
+							<p>P (P1-P2) = <span>4.1 кгс/см2<br> не соответствует</span> <mark>(оптимальный от 0 до 2 С°)</mark></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="graphs">
+							<div class="graph-wrap">
+								<div class="graph p3" id="graph-p3"></div>
+								<div class="graph-text">Средний уровень P3 - 3.6 кгс/см2</div>
+							</div>
+							<div class="graph-wrap">
+								<div class="graph p4" id="graph-p4"></div>
+								<div class="graph-text">Средний уровень P4 - 2.0 кгс/см2</div>
+							</div>
+						</div>
+						<div class="item-info true">
+							<div class="item-info-icon"></div>
+							<p>P (P3-P4) = <span>1.6 кгс/см2<br> соответствует</span> <mark>(оптимальный от 0 до 2 С°)</mark></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="actions">
+				<div class="b-block">
+					<div class="title">Итого - вам необходимо</div>
+					<ul class="actions-list">
+						<li><div class="li-info"></div>Выполнить промывку теплообменника</li>
+						<li><div class="li-info"></div>Выполнить промывку системы отопления</li>
+						<li><div class="li-info"></div>Заменить входную трубу на новую</li>
+						<li><div class="li-info"></div>Следить за расходом тепла</li>
+					</ul>
+				</div>
+			</div>
+			<div class="form-block">
+				<div class="b-block">
+					<form>
+						<div class="name">У нас готово для вас решение данной проблемы!<br>Оставьте заявку</div>
+						<input type="text" placeholder="Как мы можем к Вам обращаться?">
+						<input type="tel" placeholder="Ваш телефон">
+						<button type="submit">Отправить заявку</button>
+						<p class="button-text"><b class="active"></b>Отправляя заявку, Вы соглашаетесь<br> с <a href="#" target="_blank">политикой конфиденциальности</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-3">
+		<div class="b-block">
+			<h2>Зачем делать оценку теплообменника в ЖКХ?</h2>
+			<ul class="b-3-list">
+				<li>
+					<div class="li-image"><img src="i/adv-2.png"></div>
+					<div class="li-name">Чтобы сохранить тепло и уменьшить платежи</div>
+					<p>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы</p>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/adv-2.png"></div>
+					<div class="li-name">Чтобы сохранить тепло и уменьшить платежи</div>
+					<p>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы</p>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/adv-2.png"></div>
+					<div class="li-name">Чтобы сохранить тепло и уменьшить платежи</div>
+					<p>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы</p>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/adv-2.png"></div>
+					<div class="li-name">Чтобы сохранить тепло и уменьшить платежи</div>
+					<p>Не воздействуют на структуру металла. Не повреждают прокладки, уплотнители, детали узлов, сварные швы</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
