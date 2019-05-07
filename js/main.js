@@ -145,5 +145,33 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     });
+
+    $('form button[type="submit"]').click(function(e){
+        var self = this;
+        if ( $(this).closest('form').find('.button-text b').hasClass('active') ) {
+            $(this).closest('form').find('input').each(function(){
+                if(!$(this).val().length) { 
+                    e.preventDefault();
+                    $(this).addClass("error"); 
+                } else { 
+                    $(this).removeClass("error"); 
+                } 
+            });
+            $(this).closest('form').find('textarea').each(function(){
+                if(!$(this).val().length) { 
+                    e.preventDefault();
+                    $(this).addClass("error"); 
+                } else { 
+                    $(this).removeClass("error"); 
+                } 
+            });
+        } else {
+            $(this).closest('form').find('.button-text b').addClass('error');
+            e.preventDefault();
+        }
+        if (!e.isDefaultPrevented()) {
+            setTimeout(function(){ $(self).attr('disabled', true).css('opacity', 0.7); },100)
+        }
+    });
     
 });

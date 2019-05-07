@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 	<link rel="stylesheet" href="css/teplo.css" type="text/css">
 
@@ -20,6 +21,7 @@
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/highcharts.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -34,9 +36,9 @@
 				<h1>узнайте загрязненность своего теплообменника <span>за 1 минуту</span> в соответствии с законом жкх</h1>
 				<div class="b-1-slider">
 					<div class="b-1-slide"><img src="i/teplo-b-1-img.png"></div>
-					<div class="b-1-slide"><img src="i/teplo-b-1-img.png"></div>
+					<div class="b-1-slide"><img src="i/teplo-b-1-img-2.png"></div>
 				</div>
-				<a href="#" class="b-1-btn">Пройти тест</a>
+				<a href=".b-2" class="b-1-btn">Пройти тест</a>
 			</div>
 		</div>
 	</div>
@@ -48,14 +50,14 @@
 				<ul class="step-list type-1">
 					<li>
 						<div class="answer">
-							<div class="answer-image"><img src="i/teplo-s-1-i-1.png"></div>
+							<div class="answer-image"><a href=".step-2" class="step-type-btn" data-detail="type-1"><img src="i/teplo-s-1-i-1.png"></a></div>
 							<div class="answer-text">Тип теплообменника №1</div>
 							<a href=".step-2" class="answer-btn step-type-btn" data-detail="type-1">Выбрать</a>
 						</div>
 					</li>
 					<li>
 						<div class="answer">
-							<div class="answer-image"><img src="i/teplo-s-1-i-2.png"></div>
+							<div class="answer-image"><a href=".step-2" class="step-type-btn" data-detail="type-2"><img src="i/teplo-s-1-i-2.png"></a></div>
 							<div class="answer-text">Тип теплообменника №2</div>
 							<a href=".step-2" class="answer-btn step-type-btn" data-detail="type-2">Выбрать</a>
 						</div>
@@ -91,7 +93,7 @@
 						<div class="answer">
 							<div class="answer-image"><img src="i/teplo-s-2-i-3.png"></div>
 							<div class="answer-text">Профессиональный</div>
-							<a href="#" class="answer-btn fancybox">Выбрать</a>
+							<a href="#popup-name" class="answer-btn fancybox">Выбрать</a>
 						</div>
 					</li>
 					<li>
@@ -121,7 +123,7 @@
 						</div>
 						<div class="scheme-buttons">
 							<a href=".step-5" class="scheme-btn" data-result=".step-6-1">Далее</a>
-							<a href="#" class="scheme-btn-more fancybox">Остались вопросы?</a>
+							<a href="#popup-name" class="scheme-btn-more fancybox">Остались вопросы?</a>
 						</div>
 					</div>
 					<div class="info-wrap">
@@ -151,7 +153,7 @@
 						</div>
 						<div class="scheme-buttons">
 							<a href=".step-5" class="scheme-btn" data-result=".step-6-1">Далее</a>
-							<a href="#" class="scheme-btn-more fancybox">Остались вопросы?</a>
+							<a href="#popup-name" class="scheme-btn-more fancybox">Остались вопросы?</a>
 						</div>
 					</div>
 					<div class="info-wrap">
@@ -167,11 +169,11 @@
 			<div class="b-block">
 				<div class="step-title">Укажите дату последней промывки</div>
 				<div class="date-wrap">
-					<input type="date" placeholder="Введите дату" class="required">
+					<input type="text" placeholder="Введите дату" class="date-input required">
 					<div class="input-text"><div class="input-radio"></div>не знаю дату последней промывки</div>
 					<div class="buttons">
 						<a href="#" class="step-btn step-5-btn">Далее</a>
-						<a href="#" class="step-btn-more fancybox">Остались вопросы?</a>
+						<a href="#popup-name" class="step-btn-more fancybox">Остались вопросы?</a>
 					</div>
 				</div>
 			</div>
@@ -296,7 +298,7 @@
 							<p>Можно указать только те, которые имеются</p>
 							<div class="buttons">
 								<a href=".step-5" class="step-btn step-4-btn" data-result=".step-6-2">Далее</a>
-								<a href="#" class="step-btn-more fancybox">Остались вопросы?</a>
+								<a href="#popup-name" class="step-btn-more fancybox">Остались вопросы?</a>
 							</div>
 						</div>
 					</div>
@@ -424,7 +426,7 @@
 							<p>Можно указать только те, которые имеются</p>
 							<div class="buttons">
 								<a href=".step-5" class="step-btn step-4-btn" data-result=".step-6-2">Далее</a>
-								<a href="#" class="step-btn-more fancybox">Остались вопросы?</a>
+								<a href="#popup-name" class="step-btn-more fancybox">Остались вопросы?</a>
 							</div>
 						</div>
 					</div>
@@ -570,5 +572,233 @@
 		</div>
 	</div>
 
+	<div class="b footer">
+		<div class="b-block">
+			<div class="footer-top">
+				<a href="index.html" class="footer-logo"><img src="i/logo.png"></a>
+				<div class="footer-city">
+					<a href="#popup-city" class="fancybox">Томск<br> <span>Томская область</span></a>
+				</div>
+				<div class="footer-address">
+					<span>ул. Алексея Беленца, д. 9/1</span><br>офис 232
+				</div>
+				<div class="footer-phone">
+					<a href="tel: +73822202711" class="phone-a">8 (3822) 202 711</a>
+					<a href="#" class="footer-order fancybox">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="b-block">
+				<div class="footer-info clearfix">
+					<div class="footer-info-left left">
+						<span>Сайт antirzhavin.ru защищен от копирования <b></b></span>
+						<ul>
+							<li>ООО</li>
+							<li>ИНН</li>
+							<li>ОГРН</li>
+							<li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+							<li><a href="#" target="_blank">Политика обработки персональных данных</a></li>
+						</ul>
+					</div>
+					<div class="footer-info-right right">
+						<ul>
+							<li><a href="#" target="_blank"><img src="i/vk.png"></a></li>
+							<li><a href="#" target="_blank"><img src="i/ok.png"></a></li>
+							<li><a href="#" target="_blank"><img src="i/fb.png"></a></li>
+							<li><a href="#" target="_blank"><img src="i/youtube.png"></a></li>
+							<li><a href="#" target="_blank"><img src="i/inst.png"></a></li>
+						</ul>
+						<a href="mailto:antirzhavin@novochem.ru" class="footer-mail-a">antirzhavin@novochem.ru</a>
+						<a href="#" target="_blank" class="logo-atk"><img src="i/logo-atk.png"></a>
+					</div>
+				</div>
+				<div class="footer-nav">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about.html">О компании</a></li>
+						<li><a href="products.html">Продукция</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li><a href="reviews.html">Отзывы и испытания</a></li>
+						<li><a href="otvety.html">Ответы на вопросы</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="media.html">Медиа</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+						<li class="last"><a href="diller.html">Стать дилером завода</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Реагенты для промывки</a></li>
+						<li><a href="#">Антиржавин</a></li>
+						<li><a href="#">N-Faza</a></li>
+						<li><a href="#">Z-Faza</a></li>
+						<li><a href="#">SmartClean - E</a></li>
+						<li><a href="#">Пеногаситель</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Преобразователь ржавчины</a></li>
+						<li><a href="#">SmartClean - S</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Бытовая Химия</a></li>
+						<li><a href="#">SmartClean - H - универсальный</a></li>
+						<li><a href="#">SmartClean - H - для хромированных поверхностей</a></li>
+						<li><a href="#">SmartClean - H - для душевых кабин</a></li>
+						<li><a href="#">SmartClean - H - для ванн</a></li>
+						<li><a href="#">SmartClean - H - для акриловых поверхностей</a></li>
+						<li><a href="#">SmartClean - H - для туалета</a></li>
+						<li><a href="#">SmartClean - H - для стиральных машин</a></li>
+						<li><a href="#">SmartClean - H - для бытовой техники</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Промывка бытовых и промышленных котлов</a></li>
+						<li><a href="#">Промывка бытовых и промышленных теплообменников</a></li>
+						<li><a href="#">Обслуживание тепловых пунктов</a></li>
+						<li><a href="#">Обслуживание котельных</a></li>
+						<li><a href="#">Промывка систем отопления частного дома-коттеджа</a></li>
+						<li><a href="#">Промывка систем отопления многоквартирного дома</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="display:none;">
+		<div class="popup" id="popup-ob">
+			<div class="popup-name">Напишите краткие характеристики Вашего оборудования</div>
+			<form class="popup-step-form">
+				<div class="wrapper active">
+					<textarea placeholder="Название оборудования, его фирму"></textarea>
+					<a href="#popup-wrapper" class="popup-form-btn popup-btn-next">Далее</a>
+				</div>
+				<div class="wrapper" id="popup-wrapper">
+					<input type="text" name="name" placeholder="Как мы можем к Вам обращаться?">
+					<input type="tel" name="phone" placeholder="Ваш телефон">
+					<button type="submit" class="popup-form-btn">Отправить</button>
+				</div>
+			</form>
+			<div class="popup-bg"></div>
+		</div>
+		<div class="popup" id="popup-name">
+			<div class="popup-name">Оставьте свои контактные данные</div>
+			<div class="popup-subname">Наш специалист подберет реагент под Ваше оборудование</div>
+			<form>
+				<input type="text" placeholder="Как мы можем к Вам обращаться?">
+				<input type="tel" placeholder="Ваш телефон">
+				<button type="submit">Подобрать реагент</button>
+				<p class="button-text"><b class="active"></b>Отправляя заявку, Вы соглашаетесь<br> с <a href="#" target="_blank">политикой конфиденциальности</a></p>
+			</form>
+			<div class="popup-bg"></div>
+		</div>
+		<div class="popup popup-menu" id="popup-menu">
+			<div class="popup-menu-name">Реагенты для промывки</div>
+			<ul>
+				<li><a href="#">Антиржавин</a></li>
+				<li><a href="#">N-Faza</a></li>
+				<li><a href="#">Z-Faza</a></li>
+				<li><a href="#">SmartClean-F</a></li>
+				<li><a href="#">Пеногаситель</a></li>
+			</ul>
+			<div class="popup-menu-name">Преобразователь ржавчины</div>
+			<ul>
+				<li><a href="#">SmartClean-S</a></li>
+			</ul>
+			<div class="popup-menu-name">Преобразователь ржавчины</div>
+			<ul>
+				<li><a href="#">SmartClean - H - универсальный</a></li>
+				<li><a href="#">SmartClean - H - для хромированных поверхностей</a></li>
+				<li><a href="#">SmartClean - H - для душевых кабин</a></li>
+				<li><a href="#">SmartClean - H - для ванн</a></li>
+				<li><a href="#">SmartClean - H - для акриловых поверхностей</a></li>
+				<li><a href="#">SmartClean - H - для туалета</a></li>
+				<li><a href="#">SmartClean - H - для стиральных машин</a></li>
+				<li><a href="#">SmartClean - H - для бытовой техники</a></li>
+			</ul>
+			<div class="popup-bg"></div>
+		</div>
+		<div class="popup-city" id="popup-city">
+			<div class="popup-name">Выбор региона</div>
+			<div class="row">
+				<ul>
+					<li><a href="#" class="active">Москва</a></li>
+					<li><a href="#">Московская область</a></li>
+					<li><a href="#">Санкт-Петербург</a></li>
+				</ul>
+				<ul>
+					<li>А</li>
+					<li><a href="#">Алтайский край</a></li>
+					<li><a href="#">Архангельская область</a></li>
+					<li><a href="#">Астраханская область</a></li>
+				</ul>
+				<ul>
+					<li>Б</li>
+					<li><a href="#">Алтайский край</a></li>
+					<li><a href="#">Архангельская область</a></li>
+					<li><a href="#">Астраханская область</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<ul>
+					<li>А</li>
+					<li><a href="#">Алтайский край</a></li>
+					<li><a href="#">Архангельская область</a></li>
+					<li><a href="#">Астраханская область</a></li>
+				</ul>
+				<ul>
+					<li>Б</li>
+					<li><a href="#">Алтайский край</a></li>
+					<li><a href="#">Архангельская область</a></li>
+					<li><a href="#">Астраханская область</a></li>
+				</ul>
+				<ul>
+					<li>В</li>
+					<li><a href="#">Алтайский край</a></li>
+					<li><a href="#">Архангельская область</a></li>
+					<li><a href="#">Астраханская область</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<ul>
+					<li>А</li>
+					<li><a href="#">Алтайский край</a></li>
+					<li><a href="#">Архангельская область</a></li>
+					<li><a href="#">Астраханская область</a></li>
+				</ul>
+				<ul>
+					<li>Б</li>
+					<li><a href="#">Алтайский край</a></li>
+					<li><a href="#">Архангельская область</a></li>
+					<li><a href="#">Астраханская область</a></li>
+				</ul>
+				<ul>
+					<li>В</li>
+					<li><a href="#">Алтайский край</a></li>
+					<li><a href="#">Архангельская область</a></li>
+					<li><a href="#">Астраханская область</a></li>
+				</ul>
+			</div>
+			<div class="popup-bg"></div>
+		</div>
+		<div class="popup popup-order" id="popup-order">
+			<div class="popup-order-title">Ваш заказ</div>
+			<ul class="popup-order-list">
+				<li>
+					<div class="popup-order-list-name"><span></span></div>
+					<div class="popup-order-list-quantity"><div class="quantity-less"></div><span></span><div class="quantity-more"></div></div>
+					<div class="popup-order-list-price"><span></span> руб.</div>
+					<div class="popup-order-list-del"></div>
+				</li>
+			</ul>
+			<div class="popup-order-summa">Сумма <span>0</span> руб.</div>
+			<form>
+				<input type="text" placeholder="Как мы можем к Вам обращаться?">
+				<input type="tel" placeholder="Ваш телефон">
+				<button type="submit">Заказать</button>
+				<p class="button-text"><b class="active"></b>Отправляя заявку, Вы соглашаетесь<br> с <a href="#" target="_blank">политикой конфиденциальности</a></p>
+			</form>
+			<div class="popup-bg"></div>
+		</div>
+		<a id="popup-order-btn" href="#popup-order" class="fancybox"></a>
+	</div>
 </body>
 </html>

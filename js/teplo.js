@@ -11,6 +11,27 @@ $(document).ready(function(){
 		arrows: false
 	});
 
+	$('.date-input').datepicker({
+		closeText: 'Закрыть',
+		firstDay: 1,
+		currentText: 'Сегодня',
+		monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+		monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+		dayNames: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
+		dayNamesShort: ['Вск','Пнд','Втр','Срд','Чтв','Птн','Сбт'],
+		dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+		maxDate: new Date(),
+		dateFormat: 'dd.mm.yy'
+	});
+
+	$('body').on('click','.b-1-btn',function(){
+		var el = $(this).attr('href');
+		var des = $(el).offset().top - 50;
+
+		$('body,html').animate({scrollTop: des},800);
+		return false;
+	});
+
 	$('body').on('click','.step-type-btn', function(){
 		var btn = this;
 		var el = $(this).attr('href');
@@ -125,12 +146,6 @@ $(document).ready(function(){
 			$(btn).parents('.b').find('.step').animate({opacity: 1},300);
 		},300);
 
-		console.log(t2,' t2');
-		console.log(p1,' p1');
-		console.log(p2,' p2');
-		console.log(p3,' p3');
-		console.log(p4,' p4');
-		console.log(t1,' p5');
 		Highcharts.chart('graph-p1',{
 			series: [{
 				name: 'graph',
@@ -161,6 +176,9 @@ $(document).ready(function(){
 				data: t2
 			}]
 		});
+		if ($(window).width()<768){
+			$('body,html').animmate({scrollTop: $('.b-2').offset().top - 50},800)
+		}
 		return false;
 	});
 
