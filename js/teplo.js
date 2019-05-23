@@ -208,9 +208,68 @@ $(document).ready(function(){
 				$(btn).parents('.b').find('.step').removeClass('active');
 				$(btn).parents('.b').find(el).addClass('active');
 				$(btn).parents('.b').find('.step').animate({opacity: 1},300);
+				var json = JSON.parse($.ajax({'url':'teplo.json', 'async':false}).responseText);
+				resultFunc(json);
+				resultFunc2(json);
 			},300);
 		}
 		return false;
 	});
+
+	function resultFunc(data){
+		if ( (Number(data.T1) >= 0) && (Number(data.T1) <= 2) ){
+			$('.step-6 .result-list').append('<li class="true"><div class="li-info"></div>Средний уровень T1 - '+data.T1+' С° соответствует <span>(оптимальный от 0 до 2 С°)</span></li>');
+		} else {
+			$('.step-6 .result-list').append('<li class="false"><div class="li-info"></div>Средний уровень T1 - '+data.T1+' С° не соответствует <span>(оптимальный от 0 до 2 С°)</span></li>');
+		}
+
+		if ( Number(data.T2) >= 65 ){
+			$('.step-6 .result-list').append('<li class="true"><div class="li-info"></div>Средний уровень T2 - '+data.T2+' С° соответствует <span>(оптимальный от 65 С°)</span></li>');
+		} else {
+			$('.step-6 .result-list').append('<li class="false"><div class="li-info"></div>Средний уровень T2 - '+data.T2+' С° не соответствует <span>(оптимальный от 65 С°)</span></li>');
+		}
+
+		if ( Number(data.P1) < 2 ){
+			$('.step-6 .result-list').append('<li class="true"><div class="li-info"></div>Средний уровень P1 - '+data.P1+' кгс/см2 соответствует <span>(оптимальный до 2 кгс / см2)</span></li>');
+		} else {
+			$('.step-6 .result-list').append('<li class="false"><div class="li-info"></div>Средний уровень P1 - '+data.P1+' кгс/см2 не соответствует <span>(оптимальный до 2 кгс / см2)</span></li>');
+		}
+
+		if ( Number(data.P2) < 2 ){
+			$('.step-6 .result-list').append('<li class="true"><div class="li-info"></div>Средний уровень P2 - '+data.P2+' кгс/см2 соответствует <span>(оптимальный до 2 кгс / см2)</span></li>');
+		} else {
+			$('.step-6 .result-list').append('<li class="false"><div class="li-info"></div>Средний уровень P2 - '+data.P2+' кгс/см2 не соответствует <span>(оптимальный до 2 кгс / см2)</span></li>');
+		}
+	}
+
+	function resultFunc2(data){
+		var i = 0;
+		$('.step-6-2').find('.result-more').find('.item').each(function(){
+			i++;
+			switch(i){
+				case 1:
+					if (Number(data.T2) >= 65){
+						$(this).append('<div class="item-info true"><div class="item-info-icon"></div><p>Средний уровень T2 - <span>'+data.T2+' С°<br> соответствует</span> <mark>(оптимальный от 65 С°)</mark></p></div>');
+					} else {
+						$(this).append('<div class="item-info false"><div class="item-info-icon"></div><p>Средний уровень T2 - <span>'+data.T2+' С°<br>не соответствует</span> <mark>(оптимальный от 65 С°)</mark></p></div>');
+					}
+					break;
+				case 2:
+					if ( ((Number(data.P1) - Number(data.P2)) >= 0) && ((Number(data.P1) - Number(data.P2)) <= 2) ){
+						$(this).append('<div class="item-info true"><div class="item-info-icon"></div><p>P (P1-P2) = <span>'+(Number(data.P1) - Number(data.P2))+' кгс/см2<br> соответствует</span> <mark>(оптимальный от 0 до 2 С°)</mark></p></div>');
+					} else {
+						$(this).append('<div class="item-info false"><div class="item-info-icon"></div><p>P (P1-P2) = <span>'+(Number(data.P1) - Number(data.P2))+' кгс/см2<br>не соответствует</span> <mark>(оптимальный от 0 до 2 С°)</mark></p></div>');
+					}
+					break;
+				case 3:
+					if ( ((Number(data.P3) - Number(data.P4)) >= 0) && ((Number(data.P3) - Number(data.P4)) <= 2) ){
+						$(this).append('<div class="item-info true"><div class="item-info-icon"></div><p>P (P3-P4) = <span>'+(Number(data.P3) - Number(data.P4))+' кгс/см2<br> соответствует</span> <mark>(оптимальный от 0 до 2 С°)</mark></p></div>');
+					} else {
+						$(this).append('<div class="item-info false"><div class="item-info-icon"></div><p>P (P3-P4) = <span>'+(Number(data.P3) - Number(data.P4))+' кгс/см2<br>не соответствует</span> <mark>(оптимальный от 0 до 2 С°)</mark></p></div>');
+					}
+					break;
+			}
+		});
+	}
 
 });
