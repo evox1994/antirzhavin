@@ -368,6 +368,64 @@ select {
 	top: 0;
 }
 
+.private-person {
+	display: inline-block;
+	position: relative;
+	padding-left: 30px;
+	font-size: 16px;
+	color: rgb(7, 48, 84);
+	line-height: 1.2;
+	text-align: left;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+}
+.private-person:hover {
+	cursor: pointer;
+}
+.private-person input {
+	display: none !important;
+}
+.private-person .pp-checkbox {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgb(238, 242, 247);
+	background-color: rgb(238, 242, 247);
+	border-radius: 3px;
+	left: 0;
+	top: calc(50% - 10px);
+}
+.private-person input:checked + .pp-checkbox:before {
+	content: '';
+	display: block;
+	width: 8px;
+	height: 2px;
+	position: absolute;
+	left: 2px;
+	top: 11px;
+	background-color: rgb(51, 51, 51);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.private-person input:checked + .pp-checkbox:after {
+	content: '';
+	display: block;
+	width: 13px;
+	height: 2px;
+	position: absolute;
+	left: 6px;
+	top: 9px;
+	background-color: rgb(51, 51, 51);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
 .header {
 	background-color: #ffffff;
 	position: absolute;
