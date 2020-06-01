@@ -28,37 +28,110 @@
 <body>
 
 	<div class="b header">
-		<div class="b-block">
-			<div class="header-top">
-				<div class="mobile-btn">
-		            <div class="mobile-btn-el"></div>
-		        </div>
-				<a href="index.html" class="header-logo"><img src="i/logo.png"></a>
-				<div class="header-city">
-					<a href="#popup-city" class="fancybox">Томск<br> <span>Томская область</span></a>
-				</div>
-				<div class="header-address">
-					<span>ул. Алексея Беленца, д. 9/1</span><br>офис 232
-				</div>
-				<div class="header-phone">
-					<a href="tel: +73822202711" class="phone-a">8 (3822) 202 711</a>
-					<a href="#popup-name" class="header-order fancybox">Заказать звонок</a>
-				</div>
-			</div>
-			<div class="header-nav">
+		<div class="header-nav">
+			<div class="b-block">
 				<a href="index.html" class="nav-logo"><img src="i/logo.png"></a>
 				<ul>
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="about.html">О компании</a></li>
-					<li><a href="#popup-menu" class="fancybox">Продукция</a></li>
-					<li><a href="#popup-menu" class="fancybox">Услуги</a></li>
-					<li><a href="#popup-menu" class="fancybox">Отзывы и испытания</a></li>
+					<li class="li-drop">
+						<span>Отзывы и испытания</span>
+						<div class="drop">
+							<div class="drop-wrap">
+								<div class="item"><a href="#">Лабораторные испытания</a></div>
+								<div class="item"><a href="#">Отзывы</a></div>
+							</div>
+						</div>
+					</li>
 					<li><a href="otvety.html">Ответы на вопросы</a></li>
 					<li><a href="news.html">Новости</a></li>
-					<li><a href="#popup-menu" class="fancybox">Медиа</a></li>
+					<li class="li-drop">
+						<span>Медиа</span>
+						<div class="drop">
+							<div class="drop-wrap">
+								<div class="item"><a href="#">О нас пишут</a></div>
+								<div class="item"><a href="#">Видео</a></div>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">Диагностика оборудования</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
-					<li><a href="diller.html">Стать дилером завода</a></li>
+					<li><a href="diller.html">Стать дилером</a></li>
 				</ul>
+			</div>
+		</div>
+		<div class="header-top">
+			<div class="b-block">
+				<div class="wrap">
+					<div class="mobile-btn">
+			            <div class="mobile-btn-el"></div>
+			        </div>
+					<a href="index.html" class="header-logo"><img src="i/logo.png"></a>
+					<div class="header-city">
+						<a href="#popup-city" class="fancybox">Томск, Томская область</a>
+						<div class="addres">пр.&nbsp;Кирова,&nbsp;27А, офис&nbsp;1</div>
+					</div>
+					<div class="header-drop-btn">
+						<div class="burger">
+							<div class="burger-el"></div>
+						</div>
+						<div class="text">Продукция и услуги</div>
+					</div>
+					<div class="header-phone">
+						<a href="tel: +73822202711" class="phone-a">8 (3822) 202 711</a>
+						<a href="#popup-name" class="header-order fancybox">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-drop">
+			<div class="menu-drop-overlay"></div>
+			<div class="menu-drop-wrap">
+				<div class="b-block">
+					<div class="menu-drop-content">
+						<ul class="menu-drop-cat">
+							<li class="active" data-cat="#menu-1">Реагенты для промывки</li>
+							<li data-cat="#menu-2">Преобразователь ржавчины</li>
+							<li data-cat="#menu-3">Бытовая химия</li>
+							<li data-cat="#menu-4">Промывочные насосы</li>
+							<li data-cat="#menu-5">Услуги</li>
+						</ul>
+						<div class="menu-drop-nav active" id="menu-1">
+							<ul>
+								<li><a href="#">Продукт</a></li>
+								<li><a href="#">Продукт</a></li>
+								<li><a href="#">Продукт</a></li>
+								<li><a href="#">Продукт</a></li>
+							</ul>
+						</div>
+						<div class="menu-drop-nav" id="menu-2">
+							<ul>
+								<li><a href="#">Продукт</a></li>
+							</ul>
+						</div>
+						<div class="menu-drop-nav" id="menu-3">
+							<ul>
+								<li><a href="#">Продукт</a></li>
+								<li><a href="#">Продукт</a></li>
+								<li><a href="#">Продукт</a></li>
+							</ul>
+						</div>
+						<div class="menu-drop-nav" id="menu-4">
+							<ul>
+								<li><a href="#">Продукт</a></li>
+								<li><a href="#">Продукт</a></li>
+							</ul>
+						</div>
+						<div class="menu-drop-nav" id="menu-5">
+							<ul>
+								<li><a href="#">Услуга</a></li>
+								<li><a href="#">Услуга</a></li>
+								<li><a href="#">Услуга</a></li>
+								<li><a href="#">Услуга</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -69,16 +142,55 @@
 		        <div class="mobile-btn-el"></div>
 		    </div>
 		    <a href="index.html" class="header-logo"><img src="i/logo.png"></a>
-			<div class="header-nav">
+			<div class="mobile-menu-nav">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="about.html">О компании</a></li>
-					<li><a href="#popup-menu" class="fancybox">Продукция</a></li>
-					<li><a href="#popup-menu" class="fancybox">Услуги</a></li>
-					<li><a href="#popup-menu" class="fancybox">Отзывы и испытания</a></li>
+					<li class="drop">
+						<span>Продукция</span>
+						<div class="drop-wrap">
+							<ul>
+								<li><b>Регаенты для промывки</b></li>
+								<li><a href="#">Антиржавин</a></li>
+								<li><a href="#">N-faza</a></li>
+								<li><a href="#">Z-faza</a></li>
+								<li><a href="#">SmartClean-F</a></li>
+								<li><a href="#">Пеногаситель</a></li>
+								<li><a href="#">Лакмусовая бумага</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="drop">
+						<span>Услуги</span>
+						<div class="drop-wrap">
+							<ul>
+								<li><a href="#">Услуга</a></li>
+								<li><a href="#">Услуга</a></li>
+								<li><a href="#">Услуга</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="drop">
+						<span>Отзывы и испытания</span>
+						<div class="drop-wrap">
+							<ul>
+								<li><a href="#">Лабораторные испытания</a></li>
+								<li><a href="#">Отзывы</a></li>
+							</ul>
+						</div>
+					</li>
 					<li><a href="otvety.html">Ответы на вопросы</a></li>
 					<li><a href="news.html">Новости</a></li>
-					<li><a href="#popup-menu" class="fancybox">Медиа</a></li>
+					<li class="drop">
+						<span>Медиа</span>
+						<div class="drop-wrap">
+							<ul>
+								<li><a href="#">О нас пишут</a></li>
+								<li><a href="#">Видео</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="contacts.html">Диагностика оборудования</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 					<li><a href="diller.html">Стать дилером завода</a></li>
 				</ul>
