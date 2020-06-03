@@ -194,7 +194,7 @@ $(document).ready(function(){
         if ( $(window).width() > 768 ){
             if ( st > nh ){
                 $('.menu-drop').css({
-                    'height': wh - hh + nh,
+                    'height': wh - hh,
                     'top': hh
                 });
             } else {
