@@ -532,7 +532,7 @@ select {
 	display: block;
 	padding: 5px 0 5px 20px;
 	position: relative;
-	font-size: 12px;
+	font-size: 16px;
 	font-family: "PFDinDisplayPro-Medium";
 	text-align: left;
 	color: #073054;
@@ -551,7 +551,7 @@ select {
 	width: 8px;
 	height: 2px;
 	position: absolute;
-	top: 11px;
+	top: 13px;
 	left: 0px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -569,7 +569,7 @@ select {
 	width: 8px;
 	height: 2px;
 	position: absolute;
-	top: 11px;
+	top: 13px;
 	left: 5px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -620,7 +620,7 @@ select {
 .header-phone {
 	display: inline-block;
 	vertical-align: top;
-	text-align: left;
+	text-align: right;
 }
 .header-phone .phone-a {
 	display: block;
