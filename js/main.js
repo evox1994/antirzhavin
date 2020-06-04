@@ -174,6 +174,14 @@ $(document).ready(function(){
         }
     });
 
+    $('.b-face-slider').slick({
+        dots: true
+    });
+    $('.b-face-slider-mobile').slick({
+        arrows: false,
+        dots: true
+    });
+
     $(document).on('click','.mobile-menu-nav ul li.drop span',function(){
         var eh = $(this).parents('li.drop').find('.drop-wrap').find('ul').outerHeight();
         
