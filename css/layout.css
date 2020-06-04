@@ -485,7 +485,7 @@ select {
 }
 
 .header {
-	background-color: #f6f6f6;
+	background-color: #ffffff;
 	position: relative;
 	width: 100%;
 	z-index: 100;
@@ -506,7 +506,8 @@ select {
 	z-index: 100;
 	left: 0;
 	top: 0;
-	background-color: #f6f6f6;
+	background-color: #ffffff;
+	border-bottom: 1px solid rgb(225, 225, 225);
 }
 .header-top .wrap {
 	display: -webkit-flex;
@@ -647,7 +648,7 @@ select {
 	-ms-transition: all 0.5s;
 	transition: all 0.5s;
 	position: relative;
-	background-color: #073054;
+	background-color: #f1f1f1;
 }
 .header-nav ul {
 	display: flex;
@@ -681,7 +682,7 @@ select {
 	font-size: 14px;
 }
 .header-nav ul li a, .header-nav ul li span {
-	color: #ffffff;
+	color: #000000;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -773,7 +774,7 @@ select {
 	transition: all 0.3s;
 }
 .header-drop-btn.active {
-	background-color: #ffffff;
+	background-color: #f6f6f6;
 	color: #e06666;
 }
 .header-drop-btn .burger {
