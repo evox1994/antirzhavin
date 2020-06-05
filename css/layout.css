@@ -119,10 +119,16 @@ input.error,textarea.error{
 	margin-left: -500px;
 }
 input::-webkit-input-placeholder {
-	color: #000000;
+	color: #073054;
 }
 input:-moz-placeholder {
-	color: #000000;
+	color: #073054;
+}
+textarea::-webkit-input-placeholder {
+	color: #073054;
+}
+textarea:-moz-placeholder {
+	color: #073054;
 }
 button:hover {
 	cursor: pointer;
@@ -1398,7 +1404,7 @@ select {
 .popup form button:hover {
 	background-color: #ffae00;
 }
-.popup form .button-text {
+.popup form .button-text, .b-form .button-text {
 	display: inline-block;
 	max-width: 100%;
 	font-size: 14px;
@@ -1408,13 +1414,13 @@ select {
 	text-align: left;
 	padding-left: 23px;
 }
-.popup form .button-text a {
+.popup form .button-text a, .b-form .button-text a {
 	color: rgb(170, 170, 170);
 }
-.popup form .button-text a:hover {
+.popup form .button-text a:hover, .b-form .button-text a:hover {
 	text-decoration: underline;
 }
-.popup form .button-text b {
+.popup form .button-text b, .b-form .button-text b {
 	display: block;
 	position: absolute;
 	width: 13px;
@@ -1423,11 +1429,12 @@ select {
 	border-radius: 3px;
 	left: 0;
 	top: calc(50% - 7px);
+	box-sizing: content-box;
 }
-.popup form .button-text b:hover {
+.popup form .button-text b:hover, .b-form .button-text b:hover {
 	cursor: pointer;
 }
-.popup form .button-text b.active::before {
+.popup form .button-text b.active::before, .b-form .button-text b.active:before {
 	content: '';
 	display: block;
 	width: 6px;
@@ -1441,7 +1448,7 @@ select {
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-.popup form .button-text b.active::after {
+.popup form .button-text b.active::after, .b-form .button-text b.active:after {
 	content: '';
 	display: block;
 	width: 9px;

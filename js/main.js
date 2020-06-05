@@ -181,6 +181,25 @@ $(document).ready(function(){
         arrows: false,
         dots: true
     });
+    $('.b-clients-slider').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 
     $(document).on('click','.mobile-menu-nav ul li.drop span',function(){
         var eh = $(this).parents('li.drop').find('.drop-wrap').find('ul').outerHeight();
