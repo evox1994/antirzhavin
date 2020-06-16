@@ -315,9 +315,9 @@
 .b-btn {
 	display: block;
 	width: 100%;
-	padding: 18px 10px;
-	font-size: 16px;
-	font-family: "PFDinDisplayPro-Regular";
+	padding: 16px 10px;
+	font-size: 21px;
+	font-family: "PFDinDisplayPro-Light";
 	color: #000000;
 	background-color: #f1c232;
 	border-radius: 5px;
@@ -336,7 +336,7 @@
 	background-color: transparent;
 	border: 1px solid #ffffff;
 	color: #ffffff;
-	padding: 17px 10px;
+	padding: 15px 10px;
 }
 .b-btn.border:hover {
 	color: #000000;
@@ -700,7 +700,7 @@
 	width: calc(100%/3);
 	position: relative;
 	padding-top: 50px;
-	padding-bottom: 75px;
+	padding-bottom: 77px;
 	text-align: left;
 	border: 1px solid #e1e1e1;
 	background-color: #ffffff;
@@ -965,7 +965,7 @@
 	}
 
 	.b-btn {
-		font-size: 14px;
+		font-size: 16px;
 		padding: 14px 10px;
 	}
 	.b-btn.border {
@@ -1110,7 +1110,7 @@
 		margin-top: 20px;
 	}
 	.b-pack > li {
-		padding-bottom: 65px;
+		padding-bottom: 67px;
 	}
 	.b-pack > li .mark {
 		font-size: 10px;
