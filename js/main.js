@@ -257,6 +257,14 @@ $(document).ready(function(){
         $(el).addClass('active');
     });
 
+    $(document).on('click','.b-scroll-btn',function(){
+        var el = $(this).attr('href');
+        var des = $(el).offset().top - 70;
+
+        $('body,html').animate({scrollTop: des}, 800);
+        return false;
+    });
+
     function HeaderScroll(){
         if ( $(window).width ){
             var hh = $('.header-top').outerHeight();
