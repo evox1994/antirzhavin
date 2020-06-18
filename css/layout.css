@@ -736,7 +736,7 @@ select {
 .header-nav ul > li.li-drop > ul.drop {
 	display: none;
 	width: auto;
-	min-width: 100%;
+	min-width: 200px;
 	padding-top: 10px;
 	position: absolute;
 	left: 50%;
@@ -751,6 +751,7 @@ select {
 	background-color: #ffffff;
 	white-space: nowrap;
 	box-shadow: 0 5px 15px 3px rgba(0,0,0,0.2);
+	text-align: center;
 }
 .header-nav ul > li.li-drop:hover > ul.drop {
 	display: block;
@@ -773,6 +774,12 @@ select {
 	position: absolute;
 	left: 0;
 	top: -10px;
+}
+.header-nav ul > li.li-drop > ul.drop > li {
+	margin-bottom: 5px;
+}
+.header-nav ul > li.li-drop > ul.drop > li:last-child {
+	margin-bottom: 0;
 }
 .header-nav ul > li.li-drop > ul.drop a {
 	color: #073054;
