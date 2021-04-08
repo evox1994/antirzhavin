@@ -489,6 +489,7 @@
 }
 .menu-drop-nav-col ul > li {
 	display: none;
+	position: relative;
 }
 .menu-drop-nav-col.active ul > li {
 	display: block;
@@ -499,6 +500,29 @@
 .menu-drop-nav-col ul > li:nth-child(4),
 .menu-drop-nav-col ul > li:nth-child(5) {
 	display: block;
+}
+.menu-drop-nav-col ul > li .info-wrap {
+	display: none;
+	width: 100%;
+	max-width: 300px;
+	max-height: 110px;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	z-index: 10;
+}
+.menu-drop-nav-col ul > li:hover .info-wrap {
+	display: block;
+}
+.menu-drop-nav-col ul > li .info-wrap .info {
+	padding: 15px;
+	border-radius: 10px;
+	border: 1px solid #e1e1e1;
+	background-color: #ffffff;
+	text-align: left;
 }
 .menu-drop-nav-col .more-btn {
 	display: inline-block;
