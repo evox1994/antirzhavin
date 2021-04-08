@@ -265,6 +265,15 @@ $(document).ready(function(){
         return false;
     });
 
+    $(document).on('click','.menu-drop-nav-col .more-btn',function(){
+        $(this).parents('.menu-drop-nav-col').toggleClass('active');
+        if ($(this).parents('.menu-drop-nav-col').hasClass('active')){
+            $(this).text('Скрыть');
+        } else {
+            $(this).text('Ещё');
+        }
+    });
+
     function HeaderScroll(){
         if ( $(window).width ){
             var hh = $('.header-top').outerHeight();
